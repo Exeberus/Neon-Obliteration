@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_enemie_spawner_behaviour",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_enemie_spawner_behaviour",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Sprites/Enemies.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
