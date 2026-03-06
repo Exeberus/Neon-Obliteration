@@ -6,7 +6,7 @@
   "name":"scr_enemie_spawner_behaviour",
   "parent":{
     "name":"Enemies",
-    "path":"folders/Sprites/Enemies.yy",
+    "path":"folders/Scripts/Enemies.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
