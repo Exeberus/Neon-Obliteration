@@ -1,1 +1,1 @@
-shipHealth = 20;
+ shipHealth = 20;

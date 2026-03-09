@@ -1,20 +1,19 @@
-// Inherit the parent event
-event_inherited();
+// Comportamiento
 shipLevel = 1;
 is_enemy = true;
 	
 // // Defensa
-shipHealth = 2;
-shipDefense = 0.1;
-shipDodge = 5;
+shipHealth = 0;
+shipDefense = 0;
+shipDodge = 0;
 	
 // // Ataque
-shipAttack = 2;
-shipCritAttack = 1.2;
-shipCritChance = 2;
+shipAttack = 0;
+shipCritAttack = 0;
+shipCritChance = 0;
 	
 // // Movimiento
-shipSpeed = 1;
+shipSpeed = 0;
 shipDirection = 0
 shipAngle = 0
 	
@@ -25,5 +24,5 @@ is_Spawned = false;
 image_alpha = 0;
 
 // Comportamiento de IA
-shipAI = scr_arrow_AI;
-on_deathAI = scr_enemies_death;
+shipAI = noone;
+on_deathAI = noone;

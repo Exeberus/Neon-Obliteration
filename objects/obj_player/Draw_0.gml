@@ -1,2 +1,39 @@
-draw_self();
-draw_text(15, 15, "Salud Actual: " + string(shipHealth));
+draw_self(); // DIbujarse a sí mismo
+
+// Dibujar Barra de Salud
+showHealthBar = function() {
+	if (point_distance(x, y, mouse_x, mouse_y) < 100 && barAlpha < 1) {
+		barAlpha += 0.20;
+	} else if (point_distance(x, y, mouse_x, mouse_y) > 100 && barAlpha > 0){
+		barAlpha -= 0.30;
+	}
+}
+
+drawHealthBar = function() {
+	var barWidth = 50;
+	var barHeight = 5;
+
+	var shipHealthPercent = shipHealth / shipMaxHealth;
+	draw_set_alpha(barAlpha);
+
+	// Salud Restante
+	draw_set_colour(c_black)
+	draw_rectangle(x - barWidth / 2, y + 20, x + barWidth / 2, y + 20 + barHeight, false);
+
+	// Color de la barra
+	var barColour = merge_colour(c_red, c_lime, shipHealthPercent)
+	draw_set_colour(barColour);
+
+	// Salud Actual
+	draw_rectangle(
+		x - barWidth / 2,
+		y + 20,
+		x - barWidth / 2 + barWidth * shipHealthPercent,
+		y + 20 + barHeight,
+		true
+	);
+	draw_set_alpha(1)
+}
+
+drawHealthBar();
+showHealthBar();

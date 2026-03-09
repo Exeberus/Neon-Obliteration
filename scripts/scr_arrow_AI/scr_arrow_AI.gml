@@ -6,7 +6,7 @@ function scr_arrow_AI() {
 	
 	// Efecto de Spawn
 	if shipSpawnAlpha < shipSpawnAlphaMax && is_Spawned == false {
-		shipSpawnAlpha += 0.01;
+		shipSpawnAlpha += 0.02;
 		image_alpha = shipSpawnAlpha;
 	}
 }

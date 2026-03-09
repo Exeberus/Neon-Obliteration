@@ -3,5 +3,4 @@ playerMovement();
 playerWeaponUse();
 
 move_wrap(true, true, 16)
-
-shipHealth -= 0.02
+shipHealth -= 0.05

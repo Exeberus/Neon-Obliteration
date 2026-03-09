@@ -24,7 +24,6 @@
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Enemies","order":2,"path":"folders/Scripts/Enemies.yy",},
     {"name":"Enemies AI","order":2,"path":"folders/Scripts/Enemies/Exeberus Faction/Enemies AI.yy",},
-    {"name":"Enemies Variables","order":1,"path":"folders/Scripts/Enemies/Exeberus Faction/Enemies Variables.yy",},
     {"name":"Player Weapons","order":1,"path":"folders/Scripts/Player Weapons.yy",},
     {"name":"Secuencias","order":11,"path":"folders/Secuencias.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},

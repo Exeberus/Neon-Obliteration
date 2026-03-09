@@ -1,1 +1,3 @@
 playerVariables();
+
+barAlpha = 0
