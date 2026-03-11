@@ -1,11 +1,16 @@
-draw_self(); // DIbujarse a sí mismo
+draw_self(); // Dibujarse a sí mismo
 
 // Dibujar Barra de Salud
 showHealthBar = function() {
-	if (point_distance(x, y, mouse_x, mouse_y) < 100 && barAlpha < 1) {
-		barAlpha += 0.20;
-	} else if (point_distance(x, y, mouse_x, mouse_y) > 100 && barAlpha > 0){
-		barAlpha -= 0.30;
+	if (shipHealth < shipMaxHealth) {
+		if (barAlpha < 1) {
+			barAlpha += 0.20;
+		}
+	}
+	else if (shipHealth >= shipMaxHealth) {
+		if (barAlpha > 0) {
+			barAlpha -= 0.20;
+		}
 	}
 }
 drawHealthBar = function() {

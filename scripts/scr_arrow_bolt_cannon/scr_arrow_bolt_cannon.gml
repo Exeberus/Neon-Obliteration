@@ -3,7 +3,7 @@ function arrow_bolt_cannon() {
 	weaponName = "Arrow Bolt Cannon"
 	var weapon_coodown = 100;
 	
-	var bull_damage = 1 + (obj_player.shipAttack);
+	var bull_damage = 1 // + (obj_player.shipAttack);
 	var bull_speed = 4 + (obj_player.shipSpeed / 2);
 	var bull_angle = obj_player.shipDirection;
 	var bull_sprite = spr_arrow_bolt;

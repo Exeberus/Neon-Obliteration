@@ -1,7 +1,7 @@
 var test = instance_create_layer(x, y, "instances", obj_floating_text);
 test.textLifeTime = 90;
 test.textSpeed = 0.5;
-test.textRandomCreate_Value = 20;
+test.textRandomCreate_Value = 100;
 test.textMoveDirection = "up";
 test.textString = "Hola";
 test.textColour1 = c_aqua;

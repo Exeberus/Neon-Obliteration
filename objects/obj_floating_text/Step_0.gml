@@ -40,7 +40,17 @@ function textMovement() {
 		}
 	}
 }
+function textRandomPositionCreate() {
+	if (!textRandomPosition && textRandomCreate_Value > 0)
+	{
+    x += irandom_range(-textRandomCreate_Value, textRandomCreate_Value);
+    y += irandom_range(-textRandomCreate_Value, textRandomCreate_Value);
+
+    textRandomPosition = true;
+	}
+}
 	
 textAlphaEffect();
 textDestroy();
 textMovement();
+textRandomPositionCreate();

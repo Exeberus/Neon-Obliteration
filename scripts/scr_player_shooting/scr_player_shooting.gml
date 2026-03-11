@@ -7,7 +7,7 @@ function playerWeaponUse() {
 	}
 	
 	if (shipWeaponActualCooldown <= 0) {
-		if keyboard_check(vk_space) {
+		if mouse_check_button(mb_left) {
 			weapon()
 		}
 	}

@@ -1,8 +1,8 @@
-function normalCollision() {
-	// Detectar si la bala acertó.
+// Colisión con el jugador.
+function collisionOnPlayer() {
 	var hitChance = irandom(100);
-	if (hitChance > (other.shipDodge - obj_player.shipHitChance)) { // Detectar si Dodgeo o no.
-		var damageInflict = (bulletDamage - other.shipDefense)
+	if (hitChance > (other.shipDodge)) { // Detectar si Dodgeo o no.
+		var damageInflict = (shipHealth - other.shipDefense)
 		 
 		if (damageInflict > 0) { // Si no dodgeo, y damageInflict es mayor a 0 entonces hacer daño.
 			other.shipHealth -= damageInflict;
@@ -29,11 +29,11 @@ function normalCollision() {
 				textSpeed = 0.6;
 				textMoveDirection = "up";
 				textRandomCreate_Value = 10;
-				textString = "Resist!";
-				textColour1 = c_orange;
-				textColour2 = c_orange;
-				textColour3 = c_red;
-				textColour4 = c_red;
+				textString = "You Resist!";
+				textColour1 = c_lime;
+				textColour2 = c_lime;
+				textColour3 = c_aqua;
+				textColour4 = c_aqua;
 				textAlpha = 1;
 				textAlphaIncrease = 0.02;
 				textAlphaDecrease = 0.01;
@@ -48,11 +48,11 @@ function normalCollision() {
 			textSpeed = 0.6;
 			textMoveDirection = "up";
 			textRandomCreate_Value = 10;
-			textString = "Dodge!";
-			textColour1 = c_orange;
-			textColour2 = c_orange;
-			textColour3 = c_red;
-			textColour4 = c_red;
+			textString = "You Dodge!";
+			textColour1 = c_lime;
+			textColour2 = c_lime;
+			textColour3 = c_aqua;
+			textColour4 = c_aqua;
 			textAlpha = 1;
 			textAlphaIncrease = 0.02;
 			textAlphaDecrease = 0.01;
@@ -62,9 +62,4 @@ function normalCollision() {
 	}
 }
 
-function normalProyectile() {
-	image_angle = bulletAngle;
-	
-	x += lengthdir_x(bulletSpeed, bulletAngle);
-	y += lengthdir_y(bulletSpeed, bulletAngle);
-}
+collisionOnPlayer();
