@@ -8,7 +8,6 @@ showHealthBar = function() {
 		barAlpha -= 0.30;
 	}
 }
-
 drawHealthBar = function() {
 	var barWidth = 50;
 	var barHeight = 5;
@@ -35,5 +34,5 @@ drawHealthBar = function() {
 	draw_set_alpha(1)
 }
 
-drawHealthBar();
-showHealthBar();
+drawHealthBar(); // Dibujar Barra
+showHealthBar(); // Mostrar Barra

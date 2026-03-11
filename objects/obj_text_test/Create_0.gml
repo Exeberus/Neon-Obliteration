@@ -1,0 +1,10 @@
+var test = instance_create_layer(x, y, "instances", obj_floating_text);
+test.textLifeTime = 90;
+test.textSpeed = 0.5;
+test.textMoveDirection = "up";
+test.textString = "Hola";
+test.textColour = c_aqua;
+test.textAlpha = 1;
+test.textAlphaIncrease = 0.02;
+test.textAlphaDecrease = 0.01;
+test.textAlphaRoof = true;
