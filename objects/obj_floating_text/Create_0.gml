@@ -2,6 +2,7 @@
 // Variables para el comportamiento del Texto -
 textLifeTime = 0;
 textSpeed = 0;
+textFont = noone;
 textMoveDirection = noone;
 textRandomCreate_Value = 0;
 textRandomPosition = false;
@@ -21,6 +22,7 @@ textAlphaRoof = false;
 // Parametros para copiar.
 //textLifeTime = 0;
 //textSpeed = 0;
+//textFont = noone;
 //textRandomCreate_Value = 0;
 //textMoveDirection = "";
 //textString = "";

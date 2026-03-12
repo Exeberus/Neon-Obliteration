@@ -10,6 +10,7 @@ function collisionOnPlayer() {
 			with textCreate {
 				textLifeTime = 90;
 				textSpeed = 0.6;
+				textFont = fnt_pixel_small;
 				textMoveDirection = "up";
 				textRandomCreate_Value = 10;
 				textString = "-" + string(damageInflict);
@@ -27,6 +28,7 @@ function collisionOnPlayer() {
 			with textCreate {
 				textLifeTime = 90;
 				textSpeed = 0.6;
+				textFont = fnt_pixel_small;
 				textMoveDirection = "up";
 				textRandomCreate_Value = 10;
 				textString = "You Resist!";
@@ -40,12 +42,13 @@ function collisionOnPlayer() {
 				textAlphaRoof = true;
 			}
 		}
-		instance_destroy();
+		shipHealth = 0;
 	} else { // Si dodgeo, no infligir daño.
 		var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
 		with textCreate {
 			textLifeTime = 90;
 			textSpeed = 0.6;
+			textFont = fnt_pixel_small;
 			textMoveDirection = "up";
 			textRandomCreate_Value = 10;
 			textString = "You Dodge!";
@@ -58,7 +61,7 @@ function collisionOnPlayer() {
 			textAlphaDecrease = 0.01;
 			textAlphaRoof = true;
 		}
-		instance_destroy();
+		shipHealth = 0;
 	}
 }
 

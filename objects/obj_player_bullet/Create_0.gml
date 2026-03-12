@@ -6,3 +6,5 @@ bulletCollision = noone;
 bulletDamage = 0;
 bulletSpeed = 0;
 bulletAngle = 0;
+
+bulletImpactSound = noone;

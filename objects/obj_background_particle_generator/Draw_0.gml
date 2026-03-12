@@ -1,0 +1,1 @@
+draw_text(mouse_x, mouse_y, "Biome: " + string(spaceBiomes))

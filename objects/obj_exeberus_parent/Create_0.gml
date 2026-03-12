@@ -1,6 +1,8 @@
 // Comportamiento
 shipLevel = 1;
 is_enemy = true;
+is_smallShip = noone;
+destroyInRoomOut = noone;
 	
 // // Defensa
 shipHealth = 0;

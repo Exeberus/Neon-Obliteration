@@ -1,4 +1,4 @@
-function scr_arrow_AI() {
+function arrowStraight_AI() {
 	// Movimiento
 	image_angle = shipDirection;
 	y += lengthdir_y(shipSpeed, shipDirection);
@@ -9,4 +9,19 @@ function scr_arrow_AI() {
 		shipSpawnAlpha += 0.02;
 		image_alpha = shipSpawnAlpha;
 	}
+}
+function arrowInterceptor_AI() {
+	// Movimiento
+	move_wrap(true, true, 16)
+	image_angle = shipDirection;
+	y += lengthdir_y(shipSpeed, shipDirection);
+	x += lengthdir_x(shipSpeed, shipDirection);
+	
+	// Efecto de Spawn
+	if shipSpawnAlpha < shipSpawnAlphaMax && is_Spawned == false {
+		shipSpawnAlpha += 0.02;
+		image_alpha = shipSpawnAlpha;
+	}
+	
+	
 }

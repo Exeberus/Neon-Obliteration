@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_biomesList",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_biomesList",
+  "parent":{
+    "name":"Background",
+    "path":"folders/Scripts/Misc/Background.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
