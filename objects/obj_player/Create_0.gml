@@ -27,14 +27,22 @@ if (controller != noone) {
 	shipHitChance = global.shipPlayerHitChance;
 	shipCritAttack = global.shipPlayerCritAttack;
 	shipCritChance = global.shipPlayerCritChance;
-
-	// Arma
-	weapon = global.playerWeapon;
-	weaponCooldown = global.playerWeaponCooldown;
-	cooldownReduce = global.playerCooldownReduce;
-	shipWeaponMinCooldown = global.shipPlayerWeaponMinCooldown;
+	
+	// Arma y comportamiento de esta.
+	shipWeaponName = global.shipPlayerWeaponName;
+	shipWeaponBulletBehaviour = global.shipPlayerWeaponBulletBehaviour;
+	shipWeaponBulletCollision = global.shipPlayerWeaponBulletCollision;
 	shipWeaponMaxCooldown = global.shipPlayerWeaponMaxCooldown;
 	shipWeaponActualCooldown = global.shipPlayerWeaponActualCooldown;
+
+	shipWeaponBulletDamage = global.shipPlayerWeaponBulletDamage;
+	shipWeaponBulletCant = global.shipPlayerWeaponBulletCant;
+	shipWeaponBulletSpeed = global.shipPlayerWeaponBulletSpeed;
+	shipWeaponBulletSprite = global.shipPlayerWeaponBulletSprite;
+	shipWeaponBulletLifeTime = global.shipPlayerWeaponBulletLifeTime;
+	
+	shipWeaponSound = global.shipPlayerWeaponSound;
+	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;
 }
 sprite_index = global.shipPlayerModel;
 image_blend = global.shipPlayerColor;

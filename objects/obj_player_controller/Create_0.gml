@@ -21,22 +21,30 @@ global.shipPlayerDefense = 1;
 global.shipPlayerDodge = 5;
 
 // // Ataque de la nave.
-global.shipPlayerAttack = 0;
+global.shipPlayerAttack = 1;
 global.shipPlayerHitChance = 1;
 global.shipPlayerCritAttack = 1.3;
 global.shipPlayerCritChance = 20;
 
-// Arma.
-global.playerWeapon = arrow_bolt_cannon;
-global.playerWeaponCooldown = arrow_bolt_cannon_cooldown();
-global.playerCooldownReduce = 5;
-global.shipPlayerWeaponMinCooldown = noone;
-global.shipPlayerWeaponMaxCooldown = noone;
-global.shipPlayerWeaponActualCooldown = noone;
-
 // Diseño de la nave.
 global.shipPlayerModel = spr_crow;
 global.shipPlayerColor = c_white;
+
+// Arma y comportamiento de esta.
+global.shipPlayerWeaponName = noone; // String para nombre
+global.shipPlayerWeaponBulletBehaviour = noone; // Funcion para el comportamiento de la bala
+global.shipPlayerWeaponBulletCollision = noone; // Funcion para el impacto de la bala
+global.shipPlayerWeaponMaxCooldown = 0; // Cooldown Maximo
+global.shipPlayerWeaponActualCooldown = 0; // Cooldown Maximo
+
+global.shipPlayerWeaponBulletDamage = 0 // Daño de las Balas
+global.shipPlayerWeaponBulletCant = 0; // Cantidad de Balas
+global.shipPlayerWeaponBulletSpeed = 0; // Velocidad de las Balas
+global.shipPlayerWeaponBulletSprite = noone; // Declarar Sprite
+global.shipPlayerWeaponBulletLifeTime = 0 ; // Tiempo de vida
+
+global.shipPlayerWeaponSound = noone;
+global.shipPlayerWeaponImpactSound = noone;
 
 // Limitadores a estas variables.
 function playerVariableLimit() {
@@ -48,3 +56,5 @@ function playerVariableLimit() {
 	global.shipPlayerCritAttack = clamp(global.shipPlayerCritAttack, 1.0, infinity);
 	global.shipPlayerCritChance = clamp(global.shipPlayerCritChance, 0, 100);
 }
+	
+arrowBoltCannon_variables();

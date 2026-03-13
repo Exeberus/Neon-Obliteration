@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_neutronSplitter_cannon_shoot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.2647619,
+  "exportDir":"",
+  "name":"snd_neutronSplitter_cannon_shoot",
+  "parent":{
+    "name":"Neutron Splitter",
+    "path":"folders/Sonidos/Player/weapons/shoot/Neutron Splitter.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_neutronSplitter_cannon_shoot.wav",
+  "volume":0.4,
+}

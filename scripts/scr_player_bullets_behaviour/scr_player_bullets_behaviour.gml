@@ -135,8 +135,6 @@ function normalCollision() {
 }
 
 function normalProyectile() {
-	image_angle = bulletAngle;
-	
-	x += lengthdir_x(bulletSpeed, bulletAngle);
-	y += lengthdir_y(bulletSpeed, bulletAngle);
+	x += lengthdir_x(bulletSpeed, bulletDirection);
+	y += lengthdir_y(bulletSpeed, bulletDirection);
 }

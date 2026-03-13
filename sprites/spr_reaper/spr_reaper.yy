@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_reaper",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":26,
-  "bbox_left":7,
-  "bbox_right":25,
+  "bbox_left":5,
+  "bbox_right":26,
   "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,

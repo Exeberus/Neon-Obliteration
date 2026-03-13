@@ -41,3 +41,5 @@ drawHealthBar = function() {
 
 drawHealthBar(); // Dibujar Barra
 showHealthBar(); // Mostrar Barra
+
+draw_text(15, 30, "Cooldown: " + string(shipWeaponActualCooldown))

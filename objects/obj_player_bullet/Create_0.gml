@@ -1,10 +1,10 @@
-// Variable de bala.
-bulletSprite = noone;
+// Variables de Bala
 bulletBehaviour = noone;
+bulletImpactSound = noone;
 bulletCollision = noone;
-
 bulletDamage = 0;
 bulletSpeed = 0;
-bulletAngle = 0;
+bulletDirection = 0;
+bulletLifeTime = 0;
 
-bulletImpactSound = noone;
+image_alpha = 1;

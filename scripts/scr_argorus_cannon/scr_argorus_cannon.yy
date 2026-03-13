@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_arrow_bolt_cannon",
+  "%Name":"scr_argorus_cannon",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_arrow_bolt_cannon",
+  "name":"scr_argorus_cannon",
   "parent":{
     "name":"Player Weapons",
     "path":"folders/Scripts/Player Weapons.yy",

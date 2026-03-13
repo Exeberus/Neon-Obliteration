@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_arrowbolt_cannon_shoot",
   "parent":{
-    "name":"shoot",
-    "path":"folders/Sonidos/Player/weapons/shoot.yy",
+    "name":"Arrow Bolt",
+    "path":"folders/Sonidos/Player/weapons/shoot/Arrow Bolt.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

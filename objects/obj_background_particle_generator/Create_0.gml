@@ -2,7 +2,7 @@
 is_active = true;
 spaceBiomes = choose("Final Horizon", "Comets Rain", "Asteroids Sector", "Planets Imperium", "Calm Space");
 spaceBiomeChangeTime = 0;
-spaceBiomeMaxTime = (60 * 5);
+spaceBiomeMaxTime = (60 * 60);
 
 stars_limit = 0;
 stars_cant = 0;

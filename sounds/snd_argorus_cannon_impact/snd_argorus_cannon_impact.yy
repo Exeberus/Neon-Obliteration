@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_argorus_cannon_impact",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.36548752,
+  "exportDir":"",
+  "name":"snd_argorus_cannon_impact",
+  "parent":{
+    "name":"Argorus Mk 1",
+    "path":"folders/Sonidos/Player/weapons/shoot/Argorus Mk 1.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_argorus_cannon_impact.wav",
+  "volume":1.0,
+}
