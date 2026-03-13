@@ -20,6 +20,7 @@ function arrow_bolt_cannon() {
 	bulletCreate.bulletBehaviour = bull_behaviour;
 	bulletCreate.bulletCollision = bull_collision;
 	bulletCreate.bulletImpactSound = bull_impact_sound;
+	bulletCreate.image_blend = global.shipPlayerColor;
 	shipWeaponActualCooldown = weapon_coodown;
 	audio_play_sound(snd_arrowbolt_cannon_shoot, 1, false);
 }

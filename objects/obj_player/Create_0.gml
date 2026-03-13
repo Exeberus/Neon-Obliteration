@@ -1,48 +1,43 @@
-shipName = "The Crow";
-shipLevel = 1;
+var controller = instance_find(obj_player_controller, 0);
 
-// Movimiento.
-shipSpeed = 0;
-shipAcceleration = 0.10
-shipMinSpeed = 0;
-shipMaxSpeed = 4;
+if (controller != noone) {
+	shipName = "The Crow";
+	shipLevel = global.shipPlayerLevel;
 
-shipRotationSpeed = 2;
-shipMinRotationSpeed = 2;
-shipMaxRotationSpeed = 12;
+	// Movimiento.
+	shipSpeed = global.shipPlayerSpeed;
+	shipAcceleration = global.shipPlayerAcceleration;
+	shipMinSpeed = global.shipPlayerMinSpeed;
+	shipMaxSpeed = global.shipPlayerMaxSpeed;
 
-shipDirection = 90;
+	shipRotationSpeed = global.shipPlayerRotationSpeed;
+	shipMinRotationSpeed = global.shipPlayerMinRotationSpeed;
+	shipMaxRotationSpeed = global.shipPlayerMaxRotationSpeed;
 
-// // Defensa de la nave.
-shipMaxHealth = 20;
-shipHealth = shipMaxHealth;
-shipDefense = 1;
-shipDodge = 5;
+	shipDirection = global.shipPlayerDirection;
 
-// // Ataque de la nave.
-shipAttack = 0;
-shipHitChance = 1;
-shipCritAttack = 1.3;
-shipCritChance = 20;
+	// // Defensa de la nave.
+	shipMaxHealth = global.shipPlayerMaxHealth;
+	shipHealth = global.shipPlayerMaxHealth;
+	shipDefense = global.shipPlayerDefense;
+	shipDodge = global.shipPlayerDodge;
 
-// Arma
-weapon = arrow_bolt_cannon;
-weaponCooldown = arrow_bolt_cannon_cooldown();
-cooldownReduce = 5;
-shipWeaponMinCooldown = noone;
-shipWeaponMaxCooldown = noone;
-shipWeaponActualCooldown = noone;
+	// // Ataque de la nave.
+	shipAttack = global.shipPlayerAttack;
+	shipHitChance = global.shipPlayerHitChance;
+	shipCritAttack = global.shipPlayerCritAttack;
+	shipCritChance = global.shipPlayerCritChance;
 
-// Limitadores a estas variables.
-function playerVariableLimit() {
-	shipHealth = clamp(shipHealth, 0, shipMaxHealth);
-	shipSpeed = clamp(shipSpeed, shipMinSpeed, shipMaxSpeed);
-	shipDefense = clamp(shipDefense, 0, infinity);
-	shipDodge = clamp(shipDodge, 0, infinity);
-	shipAttack = clamp(shipAttack, 0, infinity);
-	shipCritAttack = clamp(shipCritAttack, 1.0, infinity);
-	shipCritChance = clamp(shipCritChance, 0, 100);
+	// Arma
+	weapon = global.playerWeapon;
+	weaponCooldown = global.playerWeaponCooldown;
+	cooldownReduce = global.playerCooldownReduce;
+	shipWeaponMinCooldown = global.shipPlayerWeaponMinCooldown;
+	shipWeaponMaxCooldown = global.shipPlayerWeaponMaxCooldown;
+	shipWeaponActualCooldown = global.shipPlayerWeaponActualCooldown;
 }
+sprite_index = global.shipPlayerModel;
+image_blend = global.shipPlayerColor;
 
 // Barra de Vida
 barAlpha = 0

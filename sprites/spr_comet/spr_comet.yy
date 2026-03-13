@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Comets",
-    "path":"folders/Sprites/Misc/Comets.yy",
+    "path":"folders/Sprites/Misc/Background/Comets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

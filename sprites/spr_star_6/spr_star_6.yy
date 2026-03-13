@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Stars",
-    "path":"folders/Sprites/Misc/Stars.yy",
+    "path":"folders/Sprites/Misc/Background/Stars.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,0 +1,2 @@
+// Limitar Variables
+playerVariableLimit();

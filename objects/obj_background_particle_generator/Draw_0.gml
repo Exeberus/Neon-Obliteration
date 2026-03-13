@@ -1,1 +1,1 @@
-draw_text(mouse_x, mouse_y, "Biome: " + string(spaceBiomes))
+draw_text(15, 15, "Biome: " + string(spaceBiomes))

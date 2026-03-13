@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Asteroids",
-    "path":"folders/Sprites/Misc/Asteroids.yy",
+    "path":"folders/Sprites/Misc/Background/Asteroids.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

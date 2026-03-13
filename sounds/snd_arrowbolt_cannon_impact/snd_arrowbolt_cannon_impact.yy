@@ -15,7 +15,7 @@
   "name":"snd_arrowbolt_cannon_impact",
   "parent":{
     "name":"shoot",
-    "path":"folders/Sonidos/player/weapons/shoot.yy",
+    "path":"folders/Sonidos/Player/weapons/shoot.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

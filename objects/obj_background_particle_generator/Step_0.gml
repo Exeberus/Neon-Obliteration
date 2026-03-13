@@ -42,11 +42,16 @@ function backgroundParticlesGenerate() {
 		c_lime,
 		c_white,
 		c_yellow,
-		c_orange
+		c_orange,
+		c_fuchsia,
+		c_purple
 	)
 	var planet_sprite_select = choose(
 		spr_planet_1,
-		spr_planet_2
+		spr_planet_2,
+		spr_planet_3,
+		spr_planet_4,
+		spr_planet_5
 		)
 	var planet_spawn_x = irandom_range(0, room_width);
 	var planet_spawn_y = irandom_range(room_height, 0);
@@ -79,7 +84,12 @@ function backgroundParticlesGenerate() {
 		spr_asteroid_2,
 		spr_asteroid_3,
 		spr_asteroid_4,
-		spr_asteroid_5
+		spr_asteroid_5,
+		spr_asteroid_6,
+		spr_asteroid_7,
+		spr_asteroid_8,
+		spr_asteroid_9,
+		spr_asteroid_10
 		)
 	var asteroid_spawn_x = irandom_range(0, room_width);
 	var asteroid_spawn_y = irandom_range(room_height, 0);

@@ -2,6 +2,9 @@ x += lengthdir_x(mov_speed, angle);
 y += lengthdir_y(mov_speed, angle);
 
 if (alpha < 0.50) alpha += 0.02
+if alpha < 0 {
+		instance_destroy();
+}
 
 image_alpha = alpha;
 image_angle = angle;

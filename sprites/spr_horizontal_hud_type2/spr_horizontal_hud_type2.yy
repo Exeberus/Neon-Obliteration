@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Weapons Hud",
-    "path":"folders/Sprites/UI/Weapons Hud.yy",
+    "name":"Hud",
+    "path":"folders/Sprites/UI/Hud.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

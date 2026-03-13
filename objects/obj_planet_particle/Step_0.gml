@@ -2,6 +2,10 @@ y += mov_speed;
 angle += rotation_speed;
 
 function activeParticle() {
+	if alpha < 0 {
+		instance_destroy();
+	}
+	
 	if (alpha < 0.60 && is_backgroundParticle) {
 		alpha += 0.005;
 	} else if (is_backgroundParticle == false) {

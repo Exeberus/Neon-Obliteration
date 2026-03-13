@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Planets",
-    "path":"folders/Sprites/Misc/Planets.yy",
+    "path":"folders/Sprites/Misc/Background/Planets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
