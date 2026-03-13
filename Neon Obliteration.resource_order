@@ -81,6 +81,8 @@
     {"name":"obj_ship_button","order":2,"path":"objects/obj_ship_button/obj_ship_button.yy",},
     {"name":"obj_test_dummy","order":2,"path":"objects/obj_test_dummy/obj_test_dummy.yy",},
     {"name":"obj_text_test","order":1,"path":"objects/obj_text_test/obj_text_test.yy",},
+    {"name":"backgroundSpace_Fog_2","order":1,"path":"particles/backgroundSpace_Fog_2/backgroundSpace_Fog_2.yy",},
+    {"name":"backgroundSpace_Fog_3","order":2,"path":"particles/backgroundSpace_Fog_3/backgroundSpace_Fog_3.yy",},
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"RoomUI","order":16,"path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"scr_argorus_cannon","order":2,"path":"scripts/scr_argorus_cannon/scr_argorus_cannon.yy",},
