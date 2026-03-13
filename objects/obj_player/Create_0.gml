@@ -1,7 +1,7 @@
 var controller = instance_find(obj_player_controller, 0);
 
 if (controller != noone) {
-	shipName = "The Crow";
+	shipName = global.shipPlayerName;
 	shipLevel = global.shipPlayerLevel;
 
 	// Movimiento.
@@ -47,5 +47,17 @@ if (controller != noone) {
 sprite_index = global.shipPlayerModel;
 image_blend = global.shipPlayerColor;
 
-// Barra de Vida
-barAlpha = 0
+function playerVariableLimit() {
+	shipHealth = clamp(shipHealth, 0, shipMaxHealth);
+	shipSpeed = clamp(shipSpeed, shipMinSpeed, shipMaxSpeed);
+	shipDefense = clamp(shipDefense, 0, infinity);
+	shipDodge = clamp(shipDodge, 0, infinity);
+	shipAttack = clamp(shipAttack, 0, infinity);
+	shipCritAttack = clamp(shipCritAttack, 1.0, infinity);
+	shipCritChance = clamp(shipCritChance, 0, 100);
+}
+
+// Barras de Vida y Cooldown
+healthBarAlpha = 0
+cooldownBarAlpha = 0
+barPositionY = (y + 0);

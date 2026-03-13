@@ -1,0 +1,1 @@
+shipHealth -= 10;
