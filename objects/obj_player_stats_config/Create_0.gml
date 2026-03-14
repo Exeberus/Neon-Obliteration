@@ -1,5 +1,2 @@
 // Variables del jugador.
-uiPlayerHp_max = obj_player.shipMaxHealth
-uiPlayerHp = obj_player.shipHealth
-
-hpPercent = uiPlayerHp / uiPlayerHp_max;
+get_textLayerLevel = layer_text_get_id("Hotbar", "shipLevel");

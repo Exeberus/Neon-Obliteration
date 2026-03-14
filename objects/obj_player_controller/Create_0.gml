@@ -46,6 +46,16 @@ global.shipPlayerWeaponBulletLifeTime = 0 ; // Tiempo de vida
 global.shipPlayerWeaponSound = noone;
 global.shipPlayerWeaponImpactSound = noone;
 
+// Seleccion de armas
+global.shipPlayerWeaponSlot_1 = arrowBoltCannon_variables;
+global.shipPlayerWeaponSlot_1_icon = spr_arrowBolt_cannon_icon;
+
+global.shipPlayerWeaponSlot_2 = neutronSplitterCannon_variables;
+global.shipPlayerWeaponSlot_2_icon = spr_neutronSplitter_cannon_icon;
+
+global.shipPlayerWeaponSlot_3 = argorusCannon_variables;
+global.shipPlayerWeaponSlot_3_icon = spr_argorus_cannon_icon;
+
 // Limitadores a estas variables.
 function playerVariableLimit() {
 	global.shipPlayerHealth = clamp(global.shipPlayerHealth, 0, global.shipPlayerMaxHealth);
@@ -57,4 +67,4 @@ function playerVariableLimit() {
 	global.shipPlayerCritChance = clamp(global.shipPlayerCritChance, 0, 100);
 }
 	
-arrowBoltCannon_variables();
+global.shipPlayerWeaponSlot_1();

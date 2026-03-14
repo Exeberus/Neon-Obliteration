@@ -90,3 +90,4 @@ drawCooldownBar(); // Dibujar Barra
 showCooldownBar();	// Mostrar Barra
 
 draw_text(15, 30, "Cooldown: " + string(shipWeaponActualCooldown))
+draw_text(15, 45, "Weapon Slot: " + string(shipActualSlot))

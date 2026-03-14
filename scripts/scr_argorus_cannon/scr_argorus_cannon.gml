@@ -1,5 +1,5 @@
 function argorusCannon_variables() {
-	global.shipPlayerWeaponName = "Argorus Cannon"; // String para nombre
+	global.shipPlayerWeaponName = "Argorus Cannon MK 1"; // String para nombre
 	global.shipPlayerWeaponBulletBehaviour = argorusCannon_bulletBehaviour; // Funcion para el comportamiento de la bala
 	global.shipPlayerWeaponBulletCollision = normalCollision; // Funcion para el comportamiento del impacto
 	global.shipPlayerWeaponMaxCooldown = 85; // Cooldown Maximo

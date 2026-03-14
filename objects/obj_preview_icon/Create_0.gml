@@ -1,4 +1,5 @@
 // Variables
+global.playerSelected = 1;
 shipModel = global.shipPlayerModel;
 shipModelName = global.shipPlayerName;
 shipColor = global.shipPlayerColor;

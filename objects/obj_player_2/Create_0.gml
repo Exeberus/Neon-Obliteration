@@ -1,7 +1,7 @@
 var controller = instance_find(obj_player_controller, 0);
 
 if (controller != noone) {
-	shipName = global.shipPlayerName;
+	shipName = global.shipPlayer2Name;
 	shipLevel = global.shipPlayerLevel;
 
 	// Movimiento.
@@ -57,8 +57,8 @@ if (controller != noone) {
 	shipActualSlot = 1;
 	shipActualWeapon = shipWeaponSlot_1;
 }
-sprite_index = global.shipPlayerModel;
-image_blend = global.shipPlayerColor;
+sprite_index = global.shipPlayer2Model;
+image_blend = global.shipPlayer2Color;
 
 function playerVariableLimit() {
 	shipHealth = clamp(shipHealth, 0, shipMaxHealth);

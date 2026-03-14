@@ -1,12 +1,13 @@
-// Calcular Salud y cambiar estado.
-uiPlayerHp_max = obj_player.shipMaxHealth
-uiPlayerHp = obj_player.shipHealth
-hpPercent = uiPlayerHp / uiPlayerHp_max;
+// Imitar al jugador.
+if (instance_exists(obj_player)) {
+	image_blend = global.shipPlayerColor;
+	image_angle = obj_player.image_angle;
 
-image_blend = merge_colour(c_red, c_lime, hpPercent);
-
-if hpPercent > 0 {
-	sprite_index = spr_playerStateIcon 
-} else {
-	sprite_index = spr_playerStateIcon_death
+	if obj_player.shipHealth > 0 {
+		sprite_index = global.shipPlayerModel; 
+	} else {
+		sprite_index = spr_playerStateIcon_death
+	}
 }
+
+layer_text_text(get_textLayerLevel, "LvL: " + string(global.shipPlayerLevel));

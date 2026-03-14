@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player_stats_config",
+  "%Name":"obj_hotbar_controller",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player_stats_config",
+  "name":"obj_hotbar_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Icon Hotbar",
-    "path":"folders/Objetos/UI/Icon Hotbar.yy",
+    "name":"Weapon Hotbar",
+    "path":"folders/Objetos/UI/Weapon Hotbar.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_playerStateIcon",
-    "path":"sprites/spr_playerStateIcon/spr_playerStateIcon.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
