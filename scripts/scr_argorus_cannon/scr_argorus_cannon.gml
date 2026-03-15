@@ -14,6 +14,7 @@ function argorusCannon_variables() {
 	global.shipPlayerWeaponImpactSound = snd_argorus_cannon_impact; // Declarar Sonido de Disparo
 }
 function argorusCannon_bulletBehaviour() {
+	var bulletId = id;
 	bulletLifeTime --;
 	x += lengthdir_x(bulletSpeed, bulletDirection);
 	y += lengthdir_y(bulletSpeed, bulletDirection);
@@ -36,7 +37,7 @@ function argorusCannon_bulletBehaviour() {
 				bulletLifeTime = 0;
 				bulletDirection = initialDirection;
 				sprite_index = spr_argorus_bullet_secondary;
-				image_blend = obj_player.image_blend;
+				image_blend = bulletId.image_blend;
 			
 		}
 	}
