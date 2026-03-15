@@ -11,8 +11,24 @@ shipDodge = 0;
 	
 // // Ataque
 shipAttack = 0;
+shipAttackCooldown = 0;
+shipAttackActualCooldown = 0;
+shipBulletSpeed = 0;
+shipBulletCant = 0;
 shipCritAttack = 0;
 shipCritChance = 0;
+
+shipWeaponBulletBehaviour = noone;
+shipWeaponBulletCollision = noone;
+shipWeaponBulletDamage = 0;
+shipWeaponBulletSpeed = 0;
+shipWeaponBulletLifeTime = 0;
+shipWeaponBulletWaitToPersecute = 0;
+
+shipWeaponBulletSprite = noone;
+shipWeaponBulletColor = noone;
+shipWeaponSound = noone;
+shipWeaponImpactSound = noone;
 	
 // // Movimiento
 shipSpeed = 0;

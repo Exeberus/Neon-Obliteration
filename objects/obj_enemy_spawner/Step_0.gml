@@ -8,5 +8,11 @@ if shipArrowSpawnActual == shipArrowSpawnMax {
 		
 	// Crear Nave
 	var arrowSpawn = instance_create_layer(arrowSpawnPosition_x, arrowSpawnPosition_y, "Instances", obj_arrow);
-	arrowSpawn.shipDirection = arrowDirection;
+	with (arrowSpawn) {
+		shipDirection = arrowDirection;
+		shipHealth *= global.cantPlayers;
+		shipLifeTime = 30 * 60
+		destroyInRoomOut = false;
+		shipAI = choose(arrowStraight_AI, arrowInterceptor_AI, arrowShooter_AI, arrowInterceptorShooter_AI);
+	}
 }

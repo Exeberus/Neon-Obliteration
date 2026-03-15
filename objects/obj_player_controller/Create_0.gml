@@ -4,11 +4,11 @@ global.shipPlayerLevel = 1;
 
 // Movimiento.
 global.shipPlayerSpeed = 0;
-global.shipPlayerAcceleration = 0.10
+global.shipPlayerAcceleration = 0.06
 global.shipPlayerMinSpeed = 0;
-global.shipPlayerMaxSpeed = 4;
+global.shipPlayerMaxSpeed = 3;
 
-global.shipPlayerRotationSpeed = 2;
+global.shipPlayerRotationSpeed = 1.5;
 global.shipPlayerMinRotationSpeed = 2;
 global.shipPlayerMaxRotationSpeed = 12;
 

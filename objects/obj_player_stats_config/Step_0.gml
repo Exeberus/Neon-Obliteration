@@ -8,7 +8,8 @@ switch (player) {
 		if obj_player.shipHealth > 0 {
 			sprite_index = global.shipPlayerModel; 
 		} else {
-			sprite_index = spr_playerStateIcon_death
+			sprite_index = spr_playerStateIcon_death;
+			image_angle = 0;
 		}
 	}
 	break;
@@ -20,7 +21,8 @@ switch (player) {
 		if obj_player_2.shipHealth > 0 {
 			sprite_index = global.shipPlayer2Model; 
 		} else {
-			sprite_index = spr_playerStateIcon_death
+			sprite_index = spr_playerStateIcon_death;
+			image_angle = 0;
 		}
 	}
 	break;

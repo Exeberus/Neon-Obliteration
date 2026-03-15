@@ -1,5 +1,16 @@
 draw_self(); // Dibujarse a sí mismo
 
+// Dibujar Texto de arma.
+drawWeaponChangetText = function() {
+	old_textFont = draw_get_font();
+	weaponTextAlpha -= 0.03;
+	
+	draw_set_font(fnt_pixel_small)
+	draw_text_colour(x - 45, y - 30, string(shipWeaponName), image_blend, image_blend, image_blend, image_blend, weaponTextAlpha)
+	
+	draw_set_font(old_textFont)
+}
+
 // Dibujar Barra de Salud
 showHealthBar = function() {
 	if (shipHealth < shipMaxHealth) {
@@ -39,6 +50,7 @@ drawHealthBar = function() {
 	draw_set_alpha(1)
 }
 
+// Dibujar Barra de Cooldown
 showCooldownBar = function() {
 	if (shipWeaponActualCooldown < shipWeaponMaxCooldown) {
 		if (cooldownBarAlpha < 1) {
@@ -81,16 +93,6 @@ drawCooldownBar = function() {
 		true
 	);
 	draw_set_alpha(1)
-}
-
-drawWeaponChangetText = function() {
-	old_textFont = draw_get_font();
-	weaponTextAlpha -= 0.03;
-	
-	draw_set_font(fnt_pixel_small)
-	draw_text_colour(x - 45, y - 30, string(shipWeaponName), global.shipPlayerColor, global.shipPlayerColor, global.shipPlayerColor, global.shipPlayerColor, weaponTextAlpha)
-	
-	draw_set_font(old_textFont)
 }
 
 drawHealthBar(); // Dibujar Barra
