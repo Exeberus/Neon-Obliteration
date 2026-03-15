@@ -9,6 +9,7 @@ function neutronSplitterCannon_variables() {
 	global.shipPlayerWeaponBulletSpeed = 6; // Velocidad de la bala
 	global.shipPlayerWeaponBulletSprite = spr_neutronSplitter_bullet; // Declarar Sprite
 	global.shipPlayerWeaponBulletLifeTime = 0; // Tiempo de vida
+	global.shipPlayerWeaponBulletWaitToPersecute = 0; // Esperar para seguir
 	
 	global.shipPlayerWeaponSound = snd_neutronSplitter_cannon_shoot; // Declarar Sonido de Disparo
 	global.shipPlayerWeaponImpactSound = snd_neutronSplitter_cannon_impact; // Declarar Sonido de Disparo

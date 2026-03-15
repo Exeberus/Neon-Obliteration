@@ -1,1 +1,2 @@
 // Variables
+actualPlayer = noone

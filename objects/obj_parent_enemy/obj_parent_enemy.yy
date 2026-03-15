@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_exeberus_parent",
+  "%Name":"obj_parent_enemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,11 +8,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_exeberus_parent",
+  "name":"obj_parent_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ships",
-    "path":"folders/Objetos/Enemies/Factions/Exeberus/Ships.yy",
+    "name":"Enemies",
+    "path":"folders/Objetos/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,

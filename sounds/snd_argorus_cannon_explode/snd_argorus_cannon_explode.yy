@@ -15,7 +15,7 @@
   "name":"snd_argorus_cannon_explode",
   "parent":{
     "name":"Argorus Mk 1",
-    "path":"folders/Sonidos/Player/weapons/shoot/Argorus Mk 1.yy",
+    "path":"folders/Sonidos/Player/Weapons/Cannons/Argorus Mk 1.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_sniperith_cannon_shoot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.62460315,
+  "exportDir":"",
+  "name":"snd_sniperith_cannon_shoot",
+  "parent":{
+    "name":"Sniperith",
+    "path":"folders/Sonidos/Player/Weapons/Cannons/Sniperith.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_sniperith_cannon_shoot.wav",
+  "volume":0.4,
+}

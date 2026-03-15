@@ -15,7 +15,7 @@
   "name":"snd_neutronSplitter_cannon_impact",
   "parent":{
     "name":"Neutron Splitter",
-    "path":"folders/Sonidos/Player/weapons/shoot/Neutron Splitter.yy",
+    "path":"folders/Sonidos/Player/Weapons/Cannons/Neutron Splitter.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

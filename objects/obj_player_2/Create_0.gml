@@ -40,6 +40,7 @@ if (controller != noone) {
 	shipWeaponBulletSpeed = global.shipPlayerWeaponBulletSpeed;
 	shipWeaponBulletSprite = global.shipPlayerWeaponBulletSprite;
 	shipWeaponBulletLifeTime = global.shipPlayerWeaponBulletLifeTime;
+	shipWeaponBulletWaitToPersecute = global.shipPlayerWeaponBulletWaitToPersecute;
 	
 	shipWeaponSound = global.shipPlayerWeaponSound;
 	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;
@@ -71,23 +72,24 @@ function playerVariableLimit() {
 }
 
 // Barras de Vida y Cooldown
-healthBarAlpha = 0
-cooldownBarAlpha = 0
+healthBarAlpha = 0;
+cooldownBarAlpha = 0;
 barPositionY = (y + 0);
+weaponTextAlpha = 0;
 
-function resetWeapon() {
-	shipWeaponName = global.shipPlayerWeaponName;
-	shipWeaponBulletBehaviour = global.shipPlayerWeaponBulletBehaviour;
-	shipWeaponBulletCollision = global.shipPlayerWeaponBulletCollision;
-	shipWeaponMaxCooldown = global.shipPlayerWeaponMaxCooldown;
-	shipWeaponActualCooldown = global.shipPlayerWeaponActualCooldown;
-
-	shipWeaponBulletDamage = global.shipPlayerWeaponBulletDamage;
-	shipWeaponBulletCant = global.shipPlayerWeaponBulletCant;
-	shipWeaponBulletSpeed = global.shipPlayerWeaponBulletSpeed;
-	shipWeaponBulletSprite = global.shipPlayerWeaponBulletSprite;
-	shipWeaponBulletLifeTime = global.shipPlayerWeaponBulletLifeTime;
-	
-	shipWeaponSound = global.shipPlayerWeaponSound;
-	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;
+// Al unirse
+var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+with (textCreate) {
+textLifeTime = 5 * 60;
+textFont = fnt_pixel_small;
+textFollow = true;
+textToFollow = obj_player_2;
+textFollowOffset_x = -45;
+textFollowOffset_y = -35;
+textString = "Player 2 Connected !";
+textColour1 = global.shipPlayer2Color;
+textColour2 = global.shipPlayer2Color;
+textColour3 = global.shipPlayer2Color;
+textColour4 = global.shipPlayer2Color;
+textAlpha = 1;
 }

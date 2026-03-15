@@ -1,1 +1,1 @@
-shipHealth -= 10;
+//

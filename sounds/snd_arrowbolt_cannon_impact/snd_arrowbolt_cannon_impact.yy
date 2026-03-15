@@ -15,7 +15,7 @@
   "name":"snd_arrowbolt_cannon_impact",
   "parent":{
     "name":"Arrow Bolt",
-    "path":"folders/Sonidos/Player/weapons/shoot/Arrow Bolt.yy",
+    "path":"folders/Sonidos/Player/Weapons/Cannons/Arrow Bolt.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -42,6 +42,7 @@ global.shipPlayerWeaponBulletCant = 0; // Cantidad de Balas
 global.shipPlayerWeaponBulletSpeed = 0; // Velocidad de las Balas
 global.shipPlayerWeaponBulletSprite = noone; // Declarar Sprite
 global.shipPlayerWeaponBulletLifeTime = 0 ; // Tiempo de vida
+global.shipPlayerWeaponBulletWaitToPersecute = 0 // Esperar para seguir
 
 global.shipPlayerWeaponSound = noone;
 global.shipPlayerWeaponImpactSound = noone;
@@ -50,11 +51,11 @@ global.shipPlayerWeaponImpactSound = noone;
 global.shipPlayerWeaponSlot_1 = arrowBoltCannon_variables;
 global.shipPlayerWeaponSlot_1_icon = spr_arrowBolt_cannon_icon;
 
-global.shipPlayerWeaponSlot_2 = neutronSplitterCannon_variables;
-global.shipPlayerWeaponSlot_2_icon = spr_neutronSplitter_cannon_icon;
+global.shipPlayerWeaponSlot_2 = bubbePersecutorCannon_variables;
+global.shipPlayerWeaponSlot_2_icon = spr_bubblePersecutor_cannon_icon;
 
-global.shipPlayerWeaponSlot_3 = argorusCannon_variables;
-global.shipPlayerWeaponSlot_3_icon = spr_argorus_cannon_icon;
+global.shipPlayerWeaponSlot_3 = sniperithCannon_variables;
+global.shipPlayerWeaponSlot_3_icon = spr_sniperith_cannon_icon;
 
 // Limitadores a estas variables.
 function playerVariableLimit() {

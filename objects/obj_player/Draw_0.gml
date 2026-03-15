@@ -83,11 +83,20 @@ drawCooldownBar = function() {
 	draw_set_alpha(1)
 }
 
+drawWeaponChangetText = function() {
+	old_textFont = draw_get_font();
+	weaponTextAlpha -= 0.03;
+	
+	draw_set_font(fnt_pixel_small)
+	draw_text_colour(x - 45, y - 30, string(shipWeaponName), global.shipPlayerColor, global.shipPlayerColor, global.shipPlayerColor, global.shipPlayerColor, weaponTextAlpha)
+	
+	draw_set_font(old_textFont)
+}
+
 drawHealthBar(); // Dibujar Barra
 showHealthBar(); // Mostrar Barra
 
 drawCooldownBar(); // Dibujar Barra
 showCooldownBar();	// Mostrar Barra
 
-draw_text(15, 30, "Cooldown: " + string(shipWeaponActualCooldown))
-draw_text(15, 45, "Weapon Slot: " + string(shipActualSlot))
+drawWeaponChangetText(); // Dibujar Texto de arma.

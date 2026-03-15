@@ -40,6 +40,7 @@ if (controller != noone) {
 	shipWeaponBulletSpeed = global.shipPlayerWeaponBulletSpeed;
 	shipWeaponBulletSprite = global.shipPlayerWeaponBulletSprite;
 	shipWeaponBulletLifeTime = global.shipPlayerWeaponBulletLifeTime;
+	shipWeaponBulletWaitToPersecute = global.shipPlayerWeaponBulletWaitToPersecute;
 	
 	shipWeaponSound = global.shipPlayerWeaponSound;
 	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;
@@ -74,20 +75,4 @@ function playerVariableLimit() {
 healthBarAlpha = 0
 cooldownBarAlpha = 0
 barPositionY = (y + 0);
-
-function resetWeapon() {
-	shipWeaponName = global.shipPlayerWeaponName;
-	shipWeaponBulletBehaviour = global.shipPlayerWeaponBulletBehaviour;
-	shipWeaponBulletCollision = global.shipPlayerWeaponBulletCollision;
-	shipWeaponMaxCooldown = global.shipPlayerWeaponMaxCooldown;
-	shipWeaponActualCooldown = global.shipPlayerWeaponActualCooldown;
-
-	shipWeaponBulletDamage = global.shipPlayerWeaponBulletDamage;
-	shipWeaponBulletCant = global.shipPlayerWeaponBulletCant;
-	shipWeaponBulletSpeed = global.shipPlayerWeaponBulletSpeed;
-	shipWeaponBulletSprite = global.shipPlayerWeaponBulletSprite;
-	shipWeaponBulletLifeTime = global.shipPlayerWeaponBulletLifeTime;
-	
-	shipWeaponSound = global.shipPlayerWeaponSound;
-	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;
-}
+weaponTextAlpha = 0;

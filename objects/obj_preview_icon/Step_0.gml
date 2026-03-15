@@ -1,6 +1,7 @@
 // Aplicar en todo momento los cambios de Sprites y Colores.
 sprite_index = shipModel;
 image_blend = shipColor;
+layer_text_text(get_textShipPlayer, "Player " + string(global.playerSelected));
 
 // Nombre de la nave
 switch (global.playerSelected) {

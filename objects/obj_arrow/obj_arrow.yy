@@ -12,8 +12,8 @@
     "path":"folders/Objetos/Enemies/Factions/Exeberus/Ships.yy",
   },
   "parentObjectId":{
-    "name":"obj_exeberus_parent",
-    "path":"objects/obj_exeberus_parent/obj_exeberus_parent.yy",
+    "name":"obj_parent_enemy",
+    "path":"objects/obj_parent_enemy/obj_parent_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

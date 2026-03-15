@@ -39,6 +39,10 @@ function textMovement() {
 			break;
 		}
 	}
+	if (instance_exists(textToFollow) && textFollow) {
+		x = (textToFollow.x + textFollowOffset_x);
+		y = (textToFollow.y + textFollowOffset_y);
+	}
 }
 function textRandomPositionCreate() {
 	if (!textRandomPosition && textRandomCreate_Value > 0)

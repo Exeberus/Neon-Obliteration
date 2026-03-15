@@ -1,1 +1,0 @@
-draw_text(15, 15, "Biome: " + string(spaceBiomes))

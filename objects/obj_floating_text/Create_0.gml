@@ -6,6 +6,10 @@ textFont = noone;
 textMoveDirection = noone;
 textRandomCreate_Value = 0;
 textRandomPosition = false;
+textFollow = false;
+textToFollow = noone;
+textFollowOffset_x = 0;
+textFollowOffset_y = 0;
 
 // Variables del diseño del Texto -
 textString = noone;
@@ -24,6 +28,11 @@ textAlphaRoof = false;
 //textSpeed = 0;
 //textFont = noone;
 //textRandomCreate_Value = 0;
+//textRandomPosition = false;
+//textFollow = false;
+//textToFollow = false;
+//textFollowOffset_x = 0;
+//textFollowOffset_y = 0;
 //textMoveDirection = "";
 //textString = "";
 //textColour1 = noone;
