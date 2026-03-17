@@ -3,6 +3,14 @@ shipLevel = 1;
 is_enemy = true;
 is_smallShip = noone;
 destroyInRoomOut = noone;
+
+// // Elite
+is_elite = false;
+eliteEffectApplied = false;
+eliteType = "";
+eliteEffect1 = "";
+eliteEffect2 = "";
+eliteEffect3 = "";
 	
 // // Defensa
 shipHealth = 0;

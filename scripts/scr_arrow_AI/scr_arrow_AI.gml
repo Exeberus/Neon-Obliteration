@@ -1,5 +1,6 @@
 function arrowStraight_AI() {
 	// Movimiento
+	move_wrap(true, true, 16)
 	image_angle = shipDirection;
 	y += lengthdir_y(shipSpeed, shipDirection);
 	x += lengthdir_x(shipSpeed, shipDirection);
@@ -11,6 +12,16 @@ function arrowStraight_AI() {
 		if (shipSpawnAlpha == 1) {
 			is_Spawned = true
 		}
+	}
+	shipLifeTime --;
+	if (shipLifeTime <= 0) {
+		destroyInRoomOut = true;
+		image_alpha -= 0.03;
+		if (image_alpha <= 0) {
+			instance_destroy();
+		}
+	} else {
+		destroyInRoomOut = false;
 	}
 }
 
@@ -44,11 +55,14 @@ function arrowInterceptor_AI() {
 		if (image_alpha <= 0) {
 			instance_destroy();
 		}
+	} else {
+		destroyInRoomOut = false;
 	}
 }
 
 function arrowShooter_AI() {
 	// Movimiento
+	move_wrap(true, true, 16)
 	image_angle = shipDirection;
 	y += lengthdir_y(shipSpeed, shipDirection);
 	x += lengthdir_x(shipSpeed, shipDirection);
@@ -63,6 +77,16 @@ function arrowShooter_AI() {
 		shipAttackActualCooldown = shipAttackCooldown;
 		
 		enemyShoot_behaviour();
+	}
+	shipLifeTime --;
+	if (shipLifeTime <= 0) {
+		destroyInRoomOut = true;
+		image_alpha -= 0.03;
+		if (image_alpha <= 0) {
+			instance_destroy();
+		}
+	} else {
+		destroyInRoomOut = false;
 	}
 }
 
@@ -95,6 +119,8 @@ function arrowInterceptorShooter_AI() {
 		image_alpha -= 0.03;
 		if (image_alpha <= 0) {
 			instance_destroy();
+		} else {
+		destroyInRoomOut = false;
 		}
 	}
 	shipAttackActualCooldown --;

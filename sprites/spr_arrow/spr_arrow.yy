@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Ships",
-    "path":"folders/Sprites/Enemies/Factions/Exeberus/Ships.yy",
+    "name":"Arrow Variants",
+    "path":"folders/Sprites/Enemies/Factions/Exeberus/Ships/Arrow Variants.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

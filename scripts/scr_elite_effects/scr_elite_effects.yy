@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_enemie_spawner_behaviour",
+  "%Name":"scr_elite_effects",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_enemie_spawner_behaviour",
+  "name":"scr_elite_effects",
   "parent":{
     "name":"Enemies",
     "path":"folders/Scripts/Enemies.yy",

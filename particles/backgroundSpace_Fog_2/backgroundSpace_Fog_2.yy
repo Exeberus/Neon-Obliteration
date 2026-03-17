@@ -13,8 +13,8 @@
   ],
   "name":"backgroundSpace_Fog_2",
   "parent":{
-    "name":"Particle Systems",
-    "path":"folders/Particle Systems.yy",
+    "name":"In Level Particle",
+    "path":"folders/Particle Systems/In Level Particle.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

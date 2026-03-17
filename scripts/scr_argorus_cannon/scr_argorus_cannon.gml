@@ -33,7 +33,7 @@ function argorusCannon_bulletBehaviour() {
 				bulletBehaviour = normalProyectile;
 				bulletImpactSound = snd_argorus_cannon_impact;
 				bulletCollision = normalCollision;
-				bulletDamage = (obj_player.shipAttack * 0.35);
+				bulletDamage = (obj_player.shipAttack * 1.0);
 				bulletSpeed = 5;
 				bulletLifeTime = 0;
 				bulletDirection = initialDirection;
