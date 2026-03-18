@@ -1,4 +1,4 @@
-function bubbePersecutorCannon_variables() {
+function bubblePersecutorCannon_variables() {
 	global.shipPlayerWeaponName = "Bubble Persecutor Missile"; // String para nombre
 	global.shipPlayerWeaponBulletBehaviour = bubblePersecutorCannon_bulletBehaviour; // Funcion para el comportamiento de la bala
 	global.shipPlayerWeaponBulletCollision = normalCollision; // Funcion para el comportamiento del impacto

@@ -6,6 +6,7 @@ destroyInRoomOut = noone;
 
 // // Elite
 is_elite = false;
+eliteDataAlpha = 0;
 eliteEffectApplied = false;
 eliteType = "";
 eliteEffect1 = "";

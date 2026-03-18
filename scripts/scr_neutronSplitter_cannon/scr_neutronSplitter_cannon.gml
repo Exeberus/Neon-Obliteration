@@ -4,7 +4,7 @@ function neutronSplitterCannon_variables() {
 	global.shipPlayerWeaponBulletCollision = normalCollision; // Funcion para el comportamiento del impacto
 	global.shipPlayerWeaponMaxCooldown = 20; // Cooldown Maximo
 	
-	global.shipPlayerWeaponBulletDamage = (global.shipPlayerAttack * 0.33) // Daño de las Balas
+	global.shipPlayerWeaponBulletDamage = (global.shipPlayerAttack * 0.53) // Daño de las Balas
 	global.shipPlayerWeaponBulletCant = 3; // Cantidad de Balas
 	global.shipPlayerWeaponBulletSpeed = 6; // Velocidad de la bala
 	global.shipPlayerWeaponBulletSprite = spr_neutronSplitter_bullet; // Declarar Sprite

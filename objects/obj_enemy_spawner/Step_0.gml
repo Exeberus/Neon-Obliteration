@@ -49,7 +49,7 @@ if (shipArrowSpawnActual >= shipArrowSpawnMax && arrowCant < arrowLimit) {
 	with (arrowSpawn) {
 		shipDirection = arrowDirection;
 		shipMaxHealth *= global.cantPlayers;
-		shipLifeTime = 30 * 60
+		shipLifeTime = 60 * 60
 		sprite_index = arrowVariant;
 		image_blend = c_red;
 		shipAI = arrowAi;

@@ -15,16 +15,16 @@ global.shipPlayerMaxRotationSpeed = 12;
 global.shipPlayerDirection = 90;
 
 // // Defensa de la nave.
-global.shipPlayerMaxHealth = 20;
+global.shipPlayerMaxHealth = 30;
 global.shipPlayerHealth = global.shipPlayerMaxHealth;
 global.shipPlayerDefense = 1;
 global.shipPlayerDodge = 5;
 
 // // Ataque de la nave.
-global.shipPlayerAttack = 1;
+global.shipPlayerAttack = 1.5;
 global.shipPlayerHitChance = 1;
 global.shipPlayerCritAttack = 1.3;
-global.shipPlayerCritChance = 20;
+global.shipPlayerCritChance = 5;
 
 // Diseño de la nave.
 global.shipPlayerModel = spr_crow;
@@ -48,8 +48,8 @@ global.shipPlayerWeaponSound = noone;
 global.shipPlayerWeaponImpactSound = noone;
 
 // Seleccion de armas
-global.shipPlayerWeaponSlot_1 = arrowBoltCannon_variables;
-global.shipPlayerWeaponSlot_1_icon = spr_arrowBolt_cannon_icon;
+global.shipPlayerWeaponSlot_1 = bubblePersecutorCannon_variables;
+global.shipPlayerWeaponSlot_1_icon = spr_bubblePersecutor_cannon_icon;
 
 global.shipPlayerWeaponSlot_2 = neutronSplitterCannon_variables;
 global.shipPlayerWeaponSlot_2_icon = spr_neutronSplitter_cannon_icon;

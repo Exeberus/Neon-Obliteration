@@ -1,11 +1,12 @@
  // Inherit the parent event
 event_inherited();
-shipLevel = 0;
+shipLevel = global.enemyShipLevel;
 is_enemy = true;
 is_smallShip = true;
 
 // // Elite
 is_elite = false;
+eliteDataAlpha = 0;
 eliteEffectApplied = false;
 eliteType = "";
 eliteEffect1 = "";
