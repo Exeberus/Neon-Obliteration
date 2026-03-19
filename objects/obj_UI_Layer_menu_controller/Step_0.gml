@@ -8,3 +8,15 @@ if (global.is_menuLayerEnabled) {
 	layer_set_visible("menuSkins", false);
 	layer_set_visible("spaceMap_1", false);
 }
+
+// Detectar si hay un menu abierto
+
+// Menus :
+is_menuSkinsVisible = layer_get_visible("menuSkins");
+
+// Condiciones
+if (is_menuSkinsVisible) {
+	global.is_menuOpen = true;
+} else {
+	global.is_menuOpen = false;
+}

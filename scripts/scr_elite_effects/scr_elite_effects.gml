@@ -7,12 +7,12 @@ function activateEliteEffects() {
 				shipWeaponBulletDamage *= 2;
 				
 				eliteEffect1 = choose(
-				"Speedy - ", 
-				"Resistent - ", 
-				"Strong - ", 
-				"Multishoot - ",
-				"Sonic Bullet - ",
-				"Dodge Expert - "
+				"Speedy ", 
+				"Resistent ", 
+				"Strong ", 
+				"Multishoot ",
+				"Sonic Bullet ",
+				"Dodge Expert "
 				);
 				
 			break;
@@ -22,28 +22,28 @@ function activateEliteEffects() {
 				shipWeaponBulletDamage *= 3;
 				
 				eliteEffect1 = choose(
-				"Speedy - ", 
-				"Resistent - ", 
-				"Strong - ", 
-				"Multishoot - ",
-				"Sonic Bullet - ",
-				"Dodge Expert - "
+				"Speedy ", 
+				"Resistent ", 
+				"Strong ", 
+				"Multishoot ",
+				"Sonic Bullet ",
+				"Dodge Expert "
 				);
 				eliteEffect2 = choose(
-				"Speedy - ", 
-				"Resistent - ", 
-				"Strong - ", 
-				"Multishoot - ",
-				"Sonic Bullet - ",
-				"Dodge Expert - "
+				"Speedy ", 
+				"Resistent ", 
+				"Strong ", 
+				"Multishoot ",
+				"Sonic Bullet ",
+				"Dodge Expert "
 				);
 				eliteEffect3 = choose(
-				"Speedy - ", 
-				"Resistent - ", 
-				"Strong - ", 
-				"Multishoot - ",
-				"Sonic Bullet - ",
-				"Dodge Expert - "
+				"Speedy ", 
+				"Resistent ", 
+				"Strong ", 
+				"Multishoot ",
+				"Sonic Bullet ",
+				"Dodge Expert "
 				);
 			break;
 			case "uniqueElite":
@@ -52,12 +52,12 @@ function activateEliteEffects() {
 				shipWeaponBulletDamage *= 4;
 				
 				eliteEffect1 = choose(
-				"Speedy - ", 
-				"Resistent - ", 
-				"Strong - ", 
-				"Multishoot - ",
-				"Sonic Bullet - ",
-				"Dodge Expert - "
+				"Speedy ", 
+				"Resistent ", 
+				"Strong ", 
+				"Multishoot ",
+				"Sonic Bullet ",
+				"Dodge Expert "
 				);
 			break;
 		}
@@ -79,67 +79,67 @@ function activateEliteEffects() {
 
 function applyBasicEffects1() {
 	switch eliteEffect1 {
-		case "Speedy - ":
-			shipSpeed *= 1.20;
+		case "Speedy ":
+			shipSpeed *= 1.40;
 		break;
-		case "Strong - ":
+		case "Strong ":
 			shipWeaponBulletDamage *= 1.20;
 		break;
-		case "Resistent - ":
+		case "Resistent ":
 			shipDefense *= 1.20;
 		break;
-		case "Multishoot - ":
+		case "Multishoot ":
 			shipWeaponBulletCant += 2;
 		break;
-		case "Sonic Bullet - ":
-			shipWeaponBulletSpeed *= 1.20;
+		case "Sonic Bullet ":
+			shipWeaponBulletSpeed *= 2.00;
 		break;
-		case "Dodge Expert - ":
-			shipDodge += 5;
+		case "Dodge Expert ":
+			shipDodge += 10;
 		break;
 	}
 }
 function applyBasicEffects2() {
-	switch eliteEffect2 {
-		case "Speedy - ":
-			shipSpeed *= 1.20;
+	switch eliteEffect1 {
+		case "Speedy ":
+			shipSpeed *= 1.40;
 		break;
-		case "Strong - ":
+		case "Strong ":
 			shipWeaponBulletDamage *= 1.20;
 		break;
-		case "Resistent - ":
+		case "Resistent ":
 			shipDefense *= 1.20;
 		break;
-		case "Multishoot - ":
+		case "Multishoot ":
 			shipWeaponBulletCant += 2;
 		break;
-		case "Sonic Bullet - ":
-			shipWeaponBulletSpeed *= 1.20;
+		case "Sonic Bullet ":
+			shipWeaponBulletSpeed *= 2.00;
 		break;
-		case "Dodge Expert - ":
-			shipDodge += 5;
+		case "Dodge Expert ":
+			shipDodge += 10;
 		break;
 	}
 }
 function applyBasicEffects3() {
-	switch eliteEffect3 {
-		case "Speedy - ":
-			shipSpeed *= 1.20;
+	switch eliteEffect1 {
+		case "Speedy ":
+			shipSpeed *= 1.40;
 		break;
-		case "Strong - ":
+		case "Strong ":
 			shipWeaponBulletDamage *= 1.20;
 		break;
-		case "Resistent - ":
+		case "Resistent ":
 			shipDefense *= 1.20;
 		break;
-		case "Multishoot - ":
+		case "Multishoot ":
 			shipWeaponBulletCant += 2;
 		break;
-		case "Sonic Bullet - ":
-			shipWeaponBulletSpeed *= 1.20;
+		case "Sonic Bullet ":
+			shipWeaponBulletSpeed *= 2.00;
 		break;
-		case "Dodge Expert - ":
-			shipDodge += 5;
+		case "Dodge Expert ":
+			shipDodge += 10;
 		break;
 	}
 }

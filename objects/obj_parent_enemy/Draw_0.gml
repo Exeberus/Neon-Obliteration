@@ -20,10 +20,14 @@ if (is_elite) {
 		break;
 	}
 	
+	var eliteEffect1_stringWidth = string_width(eliteEffect1);
+	var eliteEffect2_stringWidth = string_width(eliteEffect2);
+	var eliteEffect3_stringWidth = string_width(eliteEffect3);
+	
 	// Texto y color de efecto Elite
 	draw_set_font(fnt_pixel_small);
 	draw_text_color(x - 20, y - 45, "Level: "+ string(shipLevel), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
-	draw_text_color(x - 20, y - 35, string(eliteEffect1) + string(eliteEffect2) + string(eliteEffect3), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
+	draw_text_color(x - (eliteEffect1_stringWidth + eliteEffect2_stringWidth + eliteEffect3_stringWidth) / 4, y - 35, string(eliteEffect1) + string(eliteEffect2) + string(eliteEffect3), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
 	draw_sprite_ext(sprite_index, 0, x, y, eliteEffectSize, eliteEffectSize, image_angle, eliteEffectColor, image_alpha);
 
 	var barWidth = 50;

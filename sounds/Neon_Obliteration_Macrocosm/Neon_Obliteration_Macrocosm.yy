@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Neon_Obliteration_Macrocosm",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":126.0,
+  "exportDir":"",
+  "name":"Neon_Obliteration_Macrocosm",
+  "parent":{
+    "name":"Menu",
+    "path":"folders/Sonidos/Music/Menu.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Neon_Obliteration_Macrocosm.wav",
+  "volume":0.6,
+}

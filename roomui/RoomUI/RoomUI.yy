@@ -72,7 +72,7 @@
                 {"$GMRSpriteGraphic":"v1","%Name":"graphic_659AE656","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_659AE656","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_horizontal_hud_type2","path":"sprites/spr_horizontal_hud_type2/spr_horizontal_hud_type2.yy",},"x":54.0,"y":20.0,},
               ],"flexDirection":0,"height":{"unit":2,"value":5.2,},"justifyContent":1,"name":"healthBarHotbal","nodeColour":4294099272,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":8.0,},},
           ],"flexDirection":2,"height":{"unit":2,"value":100.0,},"justifyContent":0,"name":"hotbarPanel","nodeColour":4294068314,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"Hotbar_p1","nodeColour":4282944498,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"Hotbar_p1","nodeColour":4282944498,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"Hotbar_p2","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"hotbarPanel","alignItems":3,"children":[
             {"$GMRFlexPanel":"","%Name":"playerIcon","alignItems":2,"children":[
@@ -143,7 +143,7 @@
                 {"$GMRSpriteGraphic":"v1","%Name":"graphic_39B386DA","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_39B386DA","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_horizontal_hud_type2","path":"sprites/spr_horizontal_hud_type2/spr_horizontal_hud_type2.yy",},"x":54.0,"y":20.0,},
               ],"flexDirection":0,"height":{"unit":2,"value":5.2,},"justifyContent":1,"name":"healthBarHotbal","nodeColour":4294099272,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":8.0,},},
           ],"flexDirection":2,"height":{"unit":2,"value":100.0,},"justifyContent":0,"layoutDirection":2,"name":"hotbarPanel","nodeColour":4294068314,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"Hotbar_p2","nodeColour":4282944498,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"Hotbar_p2","nodeColour":4282944498,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"menuPanelButtons","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"menuPanelButtons","alignItems":3,"children":[
             {"$GMRFlexPanel":"","%Name":"Panel","alignItems":3,"children":[
@@ -332,6 +332,20 @@
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"menuSkins","nodeColour":4282969586,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"spaceMap_1","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"spaceLayer","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_509D2F3A","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_509D2F3A","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"properties":[
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetName","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Arcaelus 54-D",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetSprite","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_planet_2 ",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetColor","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"c_red",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetScale","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.7",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetFaction","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Exeberus",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetDifficulty","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetLevel","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planet_lightEnemyLimit","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planet_spawn_lightEnemyTime","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetState","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Incompleted",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetPhase","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},"propertyId":{"name":"planetPhaseLimit","path":"objects/obj_planet/obj_planet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":409.0,"y":503.0,},
             {"$GMRSpriteGraphic":"v1","%Name":"graphic_1DE644F3","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","tileH":true,"tileV":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_1DE644F3","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_space_layer","path":"sprites/spr_space_layer/spr_space_layer.yy",},"x":0.0,"y":0.0,},
           ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":1,"name":"spaceLayer","nodeColour":4288497906,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"spaceMap_1","nodeColour":4282970731,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
@@ -345,5 +359,5 @@
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",
   "viewspaceChildren":[],
-  "visible":false,
+  "visible":true,
 }

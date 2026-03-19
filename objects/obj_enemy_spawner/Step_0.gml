@@ -1,7 +1,9 @@
-shipArrowSpawnActual += clamp(1, 0, shipArrowSpawnMax);
-arrowCant = instance_number(obj_arrow);
+spawn_lightEnemyTimeActual += clamp(1, 0, spawn_lightEnemyTime);
 
-if (shipArrowSpawnActual >= shipArrowSpawnMax && arrowCant < arrowLimit) {
+lightEnemyCant = instance_number(obj_arrow);
+
+if (spawn_lightEnemyTimeActual >= spawn_lightEnemyTime && lightEnemyCant < lightEnemyLimit && global.planetPhase >= 0) {
+	spawn_lightEnemyTimeActual = 0;
 	// Spawn de Elites
 	var arrowIs_elite = false;
 	var arrow_eliteType = noone;
@@ -42,7 +44,6 @@ if (shipArrowSpawnActual >= shipArrowSpawnMax && arrowCant < arrowLimit) {
 			arrowAi = arrowInterceptorShooter_AI;
 		break;
 	}
-	shipArrowSpawnActual = 0;
 		
 	// Spawnear Nave
 	var arrowSpawn = instance_create_layer(arrowSpawnPosition_x, arrowSpawnPosition_y, "Instances", obj_arrow);
