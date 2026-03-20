@@ -25,33 +25,53 @@ if (is_elite) {
 	var eliteEffect3_stringWidth = string_width(eliteEffect3);
 	
 	// Texto y color de efecto Elite
-	draw_set_font(fnt_pixel_small);
-	draw_text_color(x - 20, y - 45, "Level: "+ string(shipLevel), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
-	draw_text_color(x - (eliteEffect1_stringWidth + eliteEffect2_stringWidth + eliteEffect3_stringWidth) / 4, y - 35, string(eliteEffect1) + string(eliteEffect2) + string(eliteEffect3), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
 	draw_sprite_ext(sprite_index, 0, x, y, eliteEffectSize, eliteEffectSize, image_angle, eliteEffectColor, image_alpha);
 
-	var barWidth = 50;
-	var barHeight = 5;
+	var barWidth = 240;
+	var barHeight = 16;
 	
 	var shipHealthPercent = shipHealth / shipMaxHealth;
 	draw_set_alpha(eliteDataAlpha);
 
 	// Salud Restante
 	draw_set_colour(c_black)
-	draw_rectangle(x - barWidth / 2, y + 20, x + barWidth / 2, y + 20 + barHeight, false);
+	draw_rectangle(room_width / 2 - barWidth / 2, 5, room_width / 2 + barWidth / 2, 5 + barHeight, false);
 
 	// Color de la barra
-	var barColour = merge_colour(c_red, c_lime, shipHealthPercent)
+	var barColour = merge_colour(eliteEffectColor, eliteEffectColor, shipHealthPercent)
 	draw_set_colour(barColour);
 
 	// Salud Actual
 	draw_rectangle(
-		x - barWidth / 2,
-		y + 20,
-		x - barWidth / 2 + barWidth * shipHealthPercent,
-		y + 20 + barHeight,
+		room_width / 2 - barWidth / 2,
+		5,
+		room_width / 2 - barWidth / 2 + barWidth * shipHealthPercent,
+		5 + barHeight,
 		true
 	);
+	draw_set_font(fnt_pixel_small);
+	switch (eliteType) {
+		case "normalElite":
+			draw_sprite_ext(spr_normalElite_icon, 0, room_width / 2 - 110, 13, 1, 1, 0, eliteEffectColor, eliteDataAlpha);
+			draw_text_color(room_width / 2 - 120, 25, string(eliteEffect1), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
+		break;
+		case "megaElite":
+			draw_sprite_ext(spr_megaElite_icon, 0, room_width / 2 - 110, 13, 1, 1, 0, eliteEffectColor, eliteDataAlpha);
+			draw_text_color(room_width / 2 - 120, 25, string(eliteEffect1) + "| " + string(eliteEffect2) + "| " + string(eliteEffect3), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
+		break;
+		case "uniqueElite":
+			draw_sprite_ext(spr_uniqueElite_icon, 0, room_width / 2 - 110, 14, 1, 1, 0, eliteEffectColor, eliteDataAlpha);
+			draw_text_color(room_width / 2 - 120, 25, string(eliteEffect1), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
+		break;
+	}
+	
+	var nameString = string_width(shipName)
+	var nameStringLevel = string_width(shipLevel)
+	
+	draw_text_color(room_width / 2 - nameString / 2, 8, string(shipName), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
+	draw_text_color(room_width / 2 + 110 - nameString - nameStringLevel, 8, "Level: " + string(shipLevel), c_white, c_white, c_white, c_white, eliteDataAlpha);
+	
+	
 	draw_set_alpha(1)
 	draw_set_font(get_oldFont);
 }

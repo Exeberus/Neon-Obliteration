@@ -146,7 +146,7 @@ function backgroundParticlesGenerate() {
 	}
 }
 function spaceBiomesChange() {
-	spaceBiomeChangeTime ++;
+	//spaceBiomeChangeTime ++;
 	if (spaceBiomeChangeTime >= spaceBiomeMaxTime) {
 		removeParticle();
 		spaceBiomeChangeTime = 0;
@@ -174,6 +174,5 @@ function spaceBiomesChange() {
 		break;
 	}
 }
-
-backgroundParticlesGenerate();	
 spaceBiomesChange();
+backgroundParticlesGenerate();

@@ -1,5 +1,6 @@
 // Comportamiento
 shipLevel = 1;
+shipName = ""
 is_enemy = true;
 is_smallShip = noone;
 destroyInRoomOut = noone;

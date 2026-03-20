@@ -5,6 +5,7 @@ global.planetName = ""; // Variables del Planeta
 global.planetDifficulty = 0;
 global.planetProgresion = 0;
 global.planetPhase = 0;
+global.biomeSelected = noone;
 
 // Cantidad de enemigos
 

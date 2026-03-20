@@ -8,7 +8,7 @@ if (spawn_lightEnemyTimeActual >= spawn_lightEnemyTime && lightEnemyCant < light
 	var arrowIs_elite = false;
 	var arrow_eliteType = noone;
 	
-	var eliteChanceDrop = irandom(1000);
+	var eliteChanceDrop = irandom(100);
 
 	if (eliteChanceDrop <= 50) {
 	    arrow_eliteType = "normalElite";

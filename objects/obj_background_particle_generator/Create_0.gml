@@ -1,6 +1,6 @@
 // Variables para la cantidad de objetos de fondo.
 is_active = true;
-spaceBiomes = choose("Final Horizon", "Comets Rain", "Asteroids Sector", "Planets Imperium", "Calm Space");
+spaceBiomes = global.biomeSelected;
 spaceBiomeChangeTime = 0;
 spaceBiomeMaxTime = (60 * 60);
 

@@ -1,5 +1,6 @@
 // Variables
 planetCompleted = false;
+planetBiome = choose("Death Space", "Comets Rain", "Asteroids Sector", "Planets Imperium", "Calm Space", "Final Horizon");
 
 sprite_index = planetSprite;
 image_blend = planetColor;

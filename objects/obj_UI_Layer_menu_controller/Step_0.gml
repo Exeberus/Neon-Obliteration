@@ -1,5 +1,5 @@
 // Abrir o cerrar UI Layer dependiendo de la Habitacion
-if (room != rm_menu) { global.is_menuLayerEnabled = false } else { global.is_menuLayerEnabled = true };
+if (room != rm_menu || global.is_levelTransition) { global.is_menuLayerEnabled = false } else { global.is_menuLayerEnabled = true };
 if (global.is_menuLayerEnabled) {
 	layer_set_visible("menuPanelButtons", true);
 	layer_set_visible("spaceMap_1", true);

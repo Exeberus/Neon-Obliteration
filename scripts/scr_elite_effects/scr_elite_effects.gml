@@ -100,7 +100,7 @@ function applyBasicEffects1() {
 	}
 }
 function applyBasicEffects2() {
-	switch eliteEffect1 {
+	switch eliteEffect2 {
 		case "Speedy ":
 			shipSpeed *= 1.40;
 		break;
@@ -122,7 +122,7 @@ function applyBasicEffects2() {
 	}
 }
 function applyBasicEffects3() {
-	switch eliteEffect1 {
+	switch eliteEffect3 {
 		case "Speedy ":
 			shipSpeed *= 1.40;
 		break;

@@ -1,6 +1,7 @@
  // Inherit the parent event
 event_inherited();
 shipLevel = global.enemyShipLevel;
+shipName = "Arrow";
 is_enemy = true;
 is_smallShip = true;
 
