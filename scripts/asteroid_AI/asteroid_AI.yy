@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_enemies_death",
+  "%Name":"asteroid_AI",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_enemies_death",
+  "name":"asteroid_AI",
   "parent":{
     "name":"Enemies",
     "path":"folders/Scripts/Enemies.yy",

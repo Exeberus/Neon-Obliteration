@@ -1,4 +1,6 @@
 // Dibujar texto sobre el planeta
+draw_self();
+
 var stringSize = string_width(planetName)
 var textWidthPosition = sprite_width;
 var textHeightPosition = sprite_height * image_yscale;
@@ -28,5 +30,3 @@ if (mouseIn) {
 		draw_sprite(spr_completion_star_incompleted, 0 ,x, y);
 	}
 }
-
-draw_self();

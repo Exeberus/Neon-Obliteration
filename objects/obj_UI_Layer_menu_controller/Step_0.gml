@@ -13,6 +13,9 @@ if (global.is_menuLayerEnabled) {
 
 // Menus :
 is_menuSkinsVisible = layer_get_visible("menuSkins");
+layer_text_text(get_solarSystemId, string(global.actualSolarSystemName));
+layer_text_text(get_solarSystemDificultyId, string(global.actualSolarSystemDificulty));
+layer_text_blend(get_solarSystemId, global.actualSolarSystemColor);
 
 // Condiciones
 if (is_menuSkinsVisible) {

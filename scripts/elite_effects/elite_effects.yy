@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"elite_effects",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"elite_effects",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Scripts/Enemies.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

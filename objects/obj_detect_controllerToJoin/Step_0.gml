@@ -14,3 +14,7 @@ if (!gamepad_is_connected(0) && instance_exists(obj_player_2)) {
 	is_playerJoined_2 = false;
 	instance_destroy(obj_player_2);
 }
+
+// Detectar jugadores vivos;
+if (instance_exists(obj_player)) { global.is_playerAlive_1 = obj_player.is_playerAlive };
+if (instance_exists(obj_player_2)) { global.is_playerAlive_2 = obj_player_2.is_playerAlive };

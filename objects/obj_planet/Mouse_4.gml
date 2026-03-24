@@ -7,6 +7,7 @@ if (!global.is_menuOpen) {
 	transitionCreate.alarm[0] = 180;
 	
 	// Variables
+	global.shipPlayerLives = 3;
 	global.enemyShipLevel = planetLevel;
 
 	global.planetName = planetName; // Variables del Planeta

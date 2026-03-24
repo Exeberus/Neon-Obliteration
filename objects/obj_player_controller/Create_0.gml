@@ -1,6 +1,7 @@
 // Controlador de variables para el Jugador
 global.shipPlayerName = "The Crow";
 global.shipPlayerLevel = 1;
+global.shipPlayerLives = 0;
 
 // Movimiento.
 global.shipPlayerSpeed = 0;
@@ -19,6 +20,9 @@ global.shipPlayerMaxHealth = 30;
 global.shipPlayerHealth = global.shipPlayerMaxHealth;
 global.shipPlayerDefense = 1;
 global.shipPlayerDodge = 5;
+global.shipPlayerRegeneration = 1;
+global.shipPlayerRegenerationTime = 120;
+global.shipPlayerRegenerationTimeActual = 0;
 
 // // Ataque de la nave.
 global.shipPlayerAttack = 1.5;
@@ -48,8 +52,8 @@ global.shipPlayerWeaponSound = noone;
 global.shipPlayerWeaponImpactSound = noone;
 
 // Seleccion de armas
-global.shipPlayerWeaponSlot_1 = bubblePersecutorCannon_variables;
-global.shipPlayerWeaponSlot_1_icon = spr_bubblePersecutor_cannon_icon;
+global.shipPlayerWeaponSlot_1 = arrowBoltCannon_variables;
+global.shipPlayerWeaponSlot_1_icon = spr_arrowBolt_cannon_icon;
 
 global.shipPlayerWeaponSlot_2 = neutronSplitterCannon_variables;
 global.shipPlayerWeaponSlot_2_icon = spr_neutronSplitter_cannon_icon;

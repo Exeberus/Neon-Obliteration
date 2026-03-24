@@ -42,6 +42,7 @@
     {"name":"inst_3477360F","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_509D2F3A","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_CC185C0","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_13A2CD6B","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -66,7 +67,7 @@
         {"$GMRParticleSystem":"v1","%Name":"particle_363224F","colour":4294967295,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"particle_363224F","particleSystemId":{"name":"menu_backgroundSpace_MassiveFog_1","path":"particles/menu_backgroundSpace_MassiveFog_1/menu_backgroundSpace_MassiveFog_1.yy",},"resourceType":"GMRParticleSystem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":192.0,},
         {"$GMRParticleSystem":"v1","%Name":"particle_5F9806FC","colour":4294967295,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"particle_5F9806FC","particleSystemId":{"name":"menu_backgroundSpace_MassiveFog_2","path":"particles/menu_backgroundSpace_MassiveFog_2/menu_backgroundSpace_MassiveFog_2.yy",},"resourceType":"GMRParticleSystem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":192.0,},
         {"$GMRParticleSystem":"v1","%Name":"particle_288A97C7","colour":4294967295,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"particle_288A97C7","particleSystemId":{"name":"menu_backgroundSpace_MassiveFog_3","path":"particles/menu_backgroundSpace_MassiveFog_3/menu_backgroundSpace_MassiveFog_3.yy",},"resourceType":"GMRParticleSystem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":192.0,},
-      ],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BackgroundParticleSystems","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
+      ],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BackgroundParticleSystems","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rm_menu",

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_enemies_bullets_behaviour",
+  "%Name":"enemies_death",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_enemies_bullets_behaviour",
+  "name":"enemies_death",
   "parent":{
     "name":"Enemies",
     "path":"folders/Scripts/Enemies.yy",

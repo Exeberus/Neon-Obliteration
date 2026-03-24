@@ -3,6 +3,10 @@ var controller = instance_find(obj_player_controller, 0);
 if (controller != noone) {
 	shipName = global.shipPlayer2Name;
 	shipLevel = global.shipPlayerLevel;
+	Player = 2;
+	deathAlpha = 0;
+	resurrectPlayer = false;
+	is_playerAlive = true;
 
 	// Movimiento.
 	shipSpeed = global.shipPlayerSpeed;
@@ -21,6 +25,9 @@ if (controller != noone) {
 	shipHealth = global.shipPlayerMaxHealth;
 	shipDefense = global.shipPlayerDefense;
 	shipDodge = global.shipPlayerDodge;
+	shipRegeneration = global.shipPlayerRegeneration;
+	shipRegenerationTime = global.shipPlayerRegenerationTime;
+	shipRegenerationTimeActual = global.shipPlayerRegenerationTimeActual;
 
 	// // Ataque de la nave.
 	shipAttack = global.shipPlayerAttack;

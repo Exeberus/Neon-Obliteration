@@ -33,7 +33,7 @@ function backgroundParticlesGenerate() {
 
 	var planet_mov_speed = random_range(0.05, 0.15);
 	var planet_scale = random_range(0.2, 1.0);
-	var planet_alpha_limit = random(0.6)
+	var planet_alpha_limit = random(0.4)
 	var planet_angle = random_range(0, 360);
 	var planet_rotation_speed = random(0.1);
 	var planet_color = choose(
@@ -146,7 +146,7 @@ function backgroundParticlesGenerate() {
 	}
 }
 function spaceBiomesChange() {
-	//spaceBiomeChangeTime ++;
+	spaceBiomeChangeTime ++;
 	if (spaceBiomeChangeTime >= spaceBiomeMaxTime) {
 		removeParticle();
 		spaceBiomeChangeTime = 0;

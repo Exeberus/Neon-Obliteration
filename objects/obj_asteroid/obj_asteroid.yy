@@ -1,13 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_parent_asteroid",
-  "eventList":[],
+  "%Name":"obj_asteroid",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_parent_asteroid",
+  "name":"obj_asteroid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objetos/Enemies.yy",
+    "name":"Floating Objects",
+    "path":"folders/Objetos/Enemies/Floating Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_enemy",

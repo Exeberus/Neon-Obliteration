@@ -65,4 +65,6 @@ function collisionOnPlayer() {
 	}
 }
 
-collisionOnPlayer();
+if (other.is_playerAlive) {
+	collisionOnPlayer();
+}

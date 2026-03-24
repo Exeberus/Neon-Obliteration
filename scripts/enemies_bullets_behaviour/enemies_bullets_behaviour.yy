@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_elite_effects",
+  "%Name":"enemies_bullets_behaviour",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_elite_effects",
+  "name":"enemies_bullets_behaviour",
   "parent":{
     "name":"Enemies",
     "path":"folders/Scripts/Enemies.yy",

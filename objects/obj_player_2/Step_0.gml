@@ -56,8 +56,22 @@ function changeWeapon_joystick() {
 	}
 }
 changeWeapon_joystick();
-shipShoot();
 
+
+if (is_playerAlive) { shipShoot(); }
+function playerDeath() {
+	if (shipHealth <= 0 && !resurrectPlayer) {
+		is_playerAlive = false;
+		resurrectPlayer = true;
+		alarm[0] = 3 * 60;
+	}
+	
+	if (is_playerAlive && image_alpha < 1) {
+		image_alpha += 0.03;
+	} else if (!is_playerAlive && image_alpha > 0.3) {
+		image_alpha -= 0.01;
+	}
+}
+
+playerDeath();
 playerVariableLimit();
-
-shipHealth += 0.05

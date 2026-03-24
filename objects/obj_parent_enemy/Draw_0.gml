@@ -8,15 +8,15 @@ if (is_elite) {
 	switch (eliteType) {
 		case "normalElite":
 			eliteEffectColor = c_aqua;
-			eliteEffectSize = 1.1;
+			eliteEffectSize = 0.1;
 		break;
 		case "megaElite":
 			eliteEffectColor = c_yellow;
-			eliteEffectSize = 1.2
+			eliteEffectSize = 0.2;
 		break;
 		case "uniqueElite":
 			eliteEffectColor = c_fuchsia;
-			eliteEffectSize = 1.3
+			eliteEffectSize = 0.3;
 		break;
 	}
 	
@@ -25,7 +25,7 @@ if (is_elite) {
 	var eliteEffect3_stringWidth = string_width(eliteEffect3);
 	
 	// Texto y color de efecto Elite
-	draw_sprite_ext(sprite_index, 0, x, y, eliteEffectSize, eliteEffectSize, image_angle, eliteEffectColor, image_alpha);
+	draw_sprite_ext(sprite_index, 0, x, y, (image_xscale + eliteEffectSize), (image_yscale + eliteEffectSize), image_angle, eliteEffectColor, image_alpha);
 
 	var barWidth = 240;
 	var barHeight = 16;
@@ -69,7 +69,7 @@ if (is_elite) {
 	var nameStringLevel = string_width(shipLevel)
 	
 	draw_text_color(room_width / 2 - nameString / 2, 8, string(shipName), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
-	draw_text_color(room_width / 2 + 110 - nameString - nameStringLevel, 8, "Level: " + string(shipLevel), c_white, c_white, c_white, c_white, eliteDataAlpha);
+	draw_text_color(room_width / 2 + 110 - nameString - nameStringLevel, 8, "LvL: " + string(shipLevel), c_white, c_white, c_white, c_white, eliteDataAlpha);
 	
 	
 	draw_set_alpha(1)

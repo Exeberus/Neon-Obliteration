@@ -60,15 +60,17 @@ image_alpha = 0;
 
 // Comportamiento de IA
 shipAI = noone;
-on_deathAI = scr_enemies_death;
+on_deathAI = enemies_death;
 
 // Limitar Variables
 function limitVariables() {
+	shipHealth = clamp(shipHealth, 0, shipMaxHealth);
 	shipDefense = clamp(shipDefense, 0, infinity);
 	shipDodge = clamp(shipDodge, 0, infinity);
 	shipAttack = clamp(shipAttack, 1, infinity);
 	shipAttackCooldown = clamp(shipAttackCooldown, 1 * 60, infinity);
 	shipBulletSpeed = clamp(shipBulletSpeed, 1, 12);
+	shipWeaponBulletSpeed = clamp(shipWeaponBulletSpeed, 1, 8);
 	shipWeaponBulletCant = clamp(shipWeaponBulletCant, 1, 5);
 	shipCritAttack = clamp(shipCritAttack, 1.0, 2.0);
 	shipCritChance = clamp(shipCritChance, 1, 100);
