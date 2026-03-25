@@ -33,7 +33,7 @@ function backgroundParticlesGenerate() {
 
 	var planet_mov_speed = random_range(0.05, 0.15);
 	var planet_scale = random_range(0.2, 1.0);
-	var planet_alpha_limit = random(0.4)
+	var planet_alpha_limit = random(0.25)
 	var planet_angle = random_range(0, 360);
 	var planet_rotation_speed = random(0.1);
 	var planet_color = choose(
@@ -75,7 +75,7 @@ function backgroundParticlesGenerate() {
 
 	var asteroid_mov_speed = random_range(0.09, 0.20);
 	var asteroid_scale = random_range(0.6, 1.2);
-	var asteroid_alpha_limit = random(0.6)
+	var asteroid_alpha_limit = random(0.30)
 	var asteroid_angle = random_range(0, 360);
 	var asteroid_rotation_speed = random(0.3);
 	var asteroid_color = c_white

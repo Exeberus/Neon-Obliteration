@@ -6,6 +6,8 @@ global.planetDifficulty = 0;
 global.planetProgresion = 0;
 global.planetPhase = 0;
 global.biomeSelected = noone;
+global.mineralSelected = noone;
+global.dropChanceSelected = 0;
 
 // Cantidad de enemigos
 

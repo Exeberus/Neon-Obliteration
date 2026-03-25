@@ -11,6 +11,8 @@ switch (player) {
 			sprite_index = spr_playerStateIcon_death;
 			image_angle = 0;
 		}
+		layer_text_text(get_textLayerPlayerLives, "x" + string(global.shipPlayerLives));
+		layer_text_blend(get_textLayerPlayerLives, global.shipPlayerColor);
 	}
 	break;
 	case 2:
@@ -27,5 +29,3 @@ switch (player) {
 	}
 	break;
 }
-
-layer_text_text(get_textLayerLevel, "LvL: " + string(global.shipPlayerLevel));

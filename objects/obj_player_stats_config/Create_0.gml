@@ -1,2 +1,2 @@
 // Variables del jugador.
-get_textLayerLevel = layer_text_get_id("Hotbar", "shipLevel");
+get_textLayerPlayerLives = layer_text_get_id("Hotbar_p1", "playerLives")

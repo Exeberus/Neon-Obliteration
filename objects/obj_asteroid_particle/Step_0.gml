@@ -6,7 +6,7 @@ function activeParticle() {
 		instance_destroy();
 	}
 	
-	if (alpha < 0.80 && is_backgroundParticle) {
+	if (alpha < alpha_limit && is_backgroundParticle) {
 		alpha += 0.01;
 	} else if (is_backgroundParticle == false) {
 		alpha -= 0.04;

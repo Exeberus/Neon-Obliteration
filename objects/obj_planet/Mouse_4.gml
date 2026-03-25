@@ -15,6 +15,8 @@ if (!global.is_menuOpen) {
 	global.planetProgresion = 0;
 	global.planetPhase = 0;
 	global.biomeSelected = planetBiome;
+	global.mineralSelected = planetMineral;
+	global.dropChanceSelected = planetDropChance;
 
 	// Cantidad de enemigos
 

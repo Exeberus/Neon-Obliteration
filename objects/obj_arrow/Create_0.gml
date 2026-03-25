@@ -4,6 +4,9 @@ shipLevel = global.enemyShipLevel;
 shipName = "Arrow";
 is_enemy = true;
 is_smallShip = true;
+enemyCreditDrop = 5 + (3 * shipLevel);
+enemyDropChance = global.dropChanceSelected;
+enemyDropCant = 1;
 
 // // Elite
 is_elite = false;

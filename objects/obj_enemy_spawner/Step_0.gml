@@ -8,7 +8,7 @@ if (spawn_lightEnemyTimeActual >= spawn_lightEnemyTime && lightEnemyCant < light
 	var arrowIs_elite = false;
 	var arrow_eliteType = noone;
 	
-	var eliteChanceDrop = irandom(100);
+	var eliteChanceDrop = irandom(10);
 
 	if (eliteChanceDrop <= 5) {
 	    arrow_eliteType = "normalElite";
@@ -18,7 +18,7 @@ if (spawn_lightEnemyTimeActual >= spawn_lightEnemyTime && lightEnemyCant < light
 	    arrow_eliteType = "megaElite";
 	    arrowIs_elite = true;
 	}
-	else if (eliteChanceDrop <= 6.5) {
+	else if (eliteChanceDrop <= 7) {
 	    arrow_eliteType = "uniqueElite";
 	    arrowIs_elite = true;
 	}

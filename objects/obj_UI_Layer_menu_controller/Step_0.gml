@@ -3,10 +3,12 @@ if (room != rm_menu || global.is_levelTransition) { global.is_menuLayerEnabled =
 if (global.is_menuLayerEnabled) {
 	layer_set_visible("menuPanelButtons", true);
 	layer_set_visible("spaceMap_1", true);
+	layer_set_visible("menuPanelCurrency", true);
 } else {
 	layer_set_visible("menuPanelButtons", false);
 	layer_set_visible("menuSkins", false);
 	layer_set_visible("spaceMap_1", false);
+	layer_set_visible("menuPanelCurrency", false);
 }
 
 // Detectar si hay un menu abierto

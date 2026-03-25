@@ -4,6 +4,9 @@ shipName = ""
 is_enemy = true;
 is_smallShip = noone;
 destroyInRoomOut = noone;
+enemyCreditDrop = 0;
+enemyDropChance = global.dropChanceSelected;
+enemyDropCant = 0;
 
 // // Elite
 is_elite = false;

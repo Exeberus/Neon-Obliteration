@@ -9,8 +9,8 @@
   "name":"obj_player_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objetos/Player.yy",
+    "name":"Controllers",
+    "path":"folders/Objetos/Player/Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"currency_drop",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"currency_drop",
+  "parent":{
+    "name":"Currency",
+    "path":"folders/Scripts/Currency.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

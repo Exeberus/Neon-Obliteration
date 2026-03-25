@@ -5,6 +5,7 @@ function enemies_death() {
 			var smallExplotionSound = choose(snd_small_exeberus_ship_death_1, snd_small_exeberus_ship_death_2, snd_small_exeberus_ship_death_3);
 			audio_play_sound(smallExplotionSound, 1, false);
 		}
+		currency_drop();
 		instance_destroy();
 	}
 }

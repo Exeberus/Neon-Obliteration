@@ -29,8 +29,8 @@ function playerRegeneration() {
 			textString = "+" + string(other.shipRegeneration);
 			textColour1 = c_lime;
 			textColour2 = c_lime;
-			textColour3 = c_lime;
-			textColour4 = c_lime;
+			textColour3 = c_aqua;
+			textColour4 = c_aqua;
 			textAlpha = 1;
 			textAlphaIncrease = 0.01;
 			textAlphaDecrease = 0.01;

@@ -21,7 +21,9 @@ function activateEliteEffects() {
 				is_uniqueEffect = true;
 			break;
 		}
-		
+		enemyCreditDrop *= mult
+		enemyDropChance *= mult;
+		enemyDropCant += mult;
 		shipMaxHealth *= mult;
 		shipHealth = shipMaxHealth;
 		shipWeaponBulletDamage *= mult;

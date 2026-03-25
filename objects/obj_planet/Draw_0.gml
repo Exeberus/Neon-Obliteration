@@ -15,12 +15,13 @@ if (mouseIn) {
 	draw_text_colour(x + 85 - stringSize / 3, y + 15 - (textWidthPosition / 2), "Enemy Level: " + string(planetLevel), c_white, c_white, c_white, c_white, 1);
 	draw_text_colour(x + 85 - stringSize / 3, y + 30 - (textWidthPosition / 2), "Difficulty: " + string(planetDifficulty), c_white, c_white, c_white, c_white, 1);
 	draw_text_colour(x + 85 - stringSize / 3, y + 45 - (textWidthPosition / 2), "Biome: " + string(planetBiome), c_aqua, c_aqua, c_aqua, c_aqua, 1);
+	draw_text_colour(x + 85 - stringSize / 3, y + 60 - (textWidthPosition / 2), "Minerals: " + string(planetMineral), c_aqua, c_aqua, c_aqua, c_aqua, 1);
 	if (planetState == "Incompleted") {
-		draw_text_colour(x + 85 - stringSize / 3, y + 60 - (textWidthPosition / 2), "Planet Phase: " + string(planetPhase) + " | " + string(planetPhaseLimit), c_red, c_red, c_red, c_red, 1);
-		draw_text_colour(x + 85 - stringSize / 3, y + 75 - (textWidthPosition / 2), "- " + string(planetState), c_red, c_red, c_red, c_red, 1);
+		draw_text_colour(x + 85 - stringSize / 3, y + 75 - (textWidthPosition / 2), "Planet Phase: " + string(planetPhase) + " | " + string(planetPhaseLimit), c_red, c_red, c_red, c_red, 1);
+		draw_text_colour(x + 85 - stringSize / 3, y + 90 - (textWidthPosition / 2), "- " + string(planetState), c_red, c_red, c_red, c_red, 1);
 	} else {
-		draw_text_colour(x + 85 - stringSize / 3, y + 60 - (textWidthPosition / 2), "Planet Phase: " + string(planetPhase) + " | " + string(planetPhaseLimit), c_lime, c_lime, c_aqua, c_aqua, 1);
-		draw_text_colour(x + 85 - stringSize / 3, y + 75 - (textWidthPosition / 2), "- " + string(planetState), c_lime, c_lime, c_aqua, c_aqua, 1);
+		draw_text_colour(x + 85 - stringSize / 3, y + 75 - (textWidthPosition / 2), "Planet Phase: " + string(planetPhase) + " | " + string(planetPhaseLimit), c_lime, c_lime, c_aqua, c_aqua, 1);
+		draw_text_colour(x + 85 - stringSize / 3, y + 90 - (textWidthPosition / 2), "- " + string(planetState), c_lime, c_lime, c_aqua, c_aqua, 1);
 	draw_set_font(oldFont);
 	}
 	
