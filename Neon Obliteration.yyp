@@ -114,7 +114,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"Neon Obliteration",
   "resources":[
@@ -248,6 +248,7 @@
     {"id":{"name":"spr_asteroid_7","path":"sprites/spr_asteroid_7/spr_asteroid_7.yy",},},
     {"id":{"name":"spr_asteroid_8","path":"sprites/spr_asteroid_8/spr_asteroid_8.yy",},},
     {"id":{"name":"spr_asteroid_9","path":"sprites/spr_asteroid_9/spr_asteroid_9.yy",},},
+    {"id":{"name":"spr_blockedIcon","path":"sprites/spr_blockedIcon/spr_blockedIcon.yy",},},
     {"id":{"name":"spr_bubblePersecutor_bullet","path":"sprites/spr_bubblePersecutor_bullet/spr_bubblePersecutor_bullet.yy",},},
     {"id":{"name":"spr_bubblePersecutor_cannon_icon","path":"sprites/spr_bubblePersecutor_cannon_icon/spr_bubblePersecutor_cannon_icon.yy",},},
     {"id":{"name":"spr_carrier","path":"sprites/spr_carrier/spr_carrier.yy",},},
@@ -258,6 +259,7 @@
     {"id":{"name":"spr_completion_star_incompleted","path":"sprites/spr_completion_star_incompleted/spr_completion_star_incompleted.yy",},},
     {"id":{"name":"spr_creditIcon","path":"sprites/spr_creditIcon/spr_creditIcon.yy",},},
     {"id":{"name":"spr_crow","path":"sprites/spr_crow/spr_crow.yy",},},
+    {"id":{"name":"spr_diamond","path":"sprites/spr_diamond/spr_diamond.yy",},},
     {"id":{"name":"spr_exo_flex","path":"sprites/spr_exo_flex/spr_exo_flex.yy",},},
     {"id":{"name":"spr_gameTitle","path":"sprites/spr_gameTitle/spr_gameTitle.yy",},},
     {"id":{"name":"spr_horizontal_hud_type1","path":"sprites/spr_horizontal_hud_type1/spr_horizontal_hud_type1.yy",},},
@@ -280,6 +282,7 @@
     {"id":{"name":"spr_neutronSplitter_bullet","path":"sprites/spr_neutronSplitter_bullet/spr_neutronSplitter_bullet.yy",},},
     {"id":{"name":"spr_neutronSplitter_cannon_icon","path":"sprites/spr_neutronSplitter_cannon_icon/spr_neutronSplitter_cannon_icon.yy",},},
     {"id":{"name":"spr_normalElite_icon","path":"sprites/spr_normalElite_icon/spr_normalElite_icon.yy",},},
+    {"id":{"name":"spr_pallarax","path":"sprites/spr_pallarax/spr_pallarax.yy",},},
     {"id":{"name":"spr_planet_1","path":"sprites/spr_planet_1/spr_planet_1.yy",},},
     {"id":{"name":"spr_planet_2","path":"sprites/spr_planet_2/spr_planet_2.yy",},},
     {"id":{"name":"spr_planet_3","path":"sprites/spr_planet_3/spr_planet_3.yy",},},

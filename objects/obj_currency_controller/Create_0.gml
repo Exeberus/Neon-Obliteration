@@ -1,5 +1,5 @@
 // Variables
-global.galaxian_credits = 10;
+global.galaxian_credits = 250;
 global.starlit = 0;
 global.kaulite = 0;
 

@@ -1,6 +1,17 @@
 audio_play_sound(snd_material_collect, 1, false);
 instance_destroy();
 
+if (currencyType == "Mineral") {
+	switch (currencyName) {
+		case "Starlit":
+			global.starlit += currencyCant;
+		break;
+		case "Kaulite":
+			global.Kaulite += currencyCant;
+		break;
+	}
+}
+
 var textCreate = instance_create_layer(x, y, "Instances", obj_floating_text);
 
 with (textCreate) {

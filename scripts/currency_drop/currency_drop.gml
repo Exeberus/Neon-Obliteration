@@ -1,4 +1,5 @@
 function currency_drop() {
+	global.galaxian_credits += enemyCreditDrop;
 	for (var i = 0; i < enemyDropCant; i ++) {
 	
 	dropChance = irandom(100);

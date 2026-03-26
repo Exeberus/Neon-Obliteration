@@ -1,0 +1,1 @@
+if (is_blocked) { sprite_index = spr_blockedIcon } else { sprite_index = modelId };
