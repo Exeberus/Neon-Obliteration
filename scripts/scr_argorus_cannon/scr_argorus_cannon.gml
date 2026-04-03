@@ -21,13 +21,13 @@ function argorusCannon_bulletBehaviour() {
 	y += lengthdir_y(bulletSpeed, bulletDirection);
 	
 	if (bulletLifeTime <= 0) {
-		var cantBullets = 8;
+		var cantBullets = 16;
 		var initialDirection = 0;
 		
 		audio_play_sound(snd_argorus_cannon_explode, 1, false);
 		
 		for (var i = 0; i < cantBullets; i++) {
-			initialDirection += 45;
+			initialDirection += (360 / 16);
 			var shipBullet = instance_create_layer(x, y, "Instances", obj_player_bullet);
 			with (shipBullet) {
 				bulletBehaviour = normalProyectile;

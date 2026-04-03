@@ -82,4 +82,12 @@ function playerVariableLimit() {
 healthBarAlpha = 0
 cooldownBarAlpha = 0
 barPositionY = (y + 0);
+
+// Texto de Cambio de Arma
 weaponTextAlpha = 0;
+
+// Linea de Punteria
+aimLineAlpha = 0;
+
+// Toggle para mostrar data
+showShipData = false;

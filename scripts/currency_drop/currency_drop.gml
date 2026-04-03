@@ -55,3 +55,23 @@ function currency_drop() {
 		}
 	}
 }
+function consumable_drop() {
+	var dropChance = irandom(100);
+	var dropSpawnDistance = irandom_range(-10, 10);
+	
+	
+	if (dropChance < 50) {
+		var dropItem = instance_create_layer(x + dropSpawnDistance, y + dropSpawnDistance, "Instances", obj_collectable_parent);
+		
+		dropItem.currencyType = "Consumable";
+		dropItem.currencyName = "Medic Kit";
+		dropItem.currencySprite = spr_medic_kit;
+		dropItem.currencySize = 1;
+		
+		dropItem.currencyFallSpeed = random(2);
+		dropItem.currencyMoveDirection = random(360);
+		dropItem.currencyMoveSpeed = random(1);
+		dropItem.currencyRotSpeed = random(2);
+		dropItem.currencyMoveSpeedDecay = random(0.05);
+	}
+}

@@ -7,3 +7,6 @@ lightEnemyCant = 0;
 
 spawn_lightEnemyTime = global.set_spawn_lightEnemyTime - (global.planetDifficulty * 0.05);
 spawn_lightEnemyTimeActual = 0;
+
+spawn_asteroidTime = 120 - (global.planetDifficulty * 0.10);
+spawn_asteroidTimeActual = 0;

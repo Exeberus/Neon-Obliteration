@@ -1,4 +1,5 @@
 if (!global.is_menuOpen) {
+	
 	layer_sequence_create("screenEffects", room_width / 2, room_height / 2, se_fadeIn);
 	audio_play_sound(snd_click_on_button_success, 0, false);
 	mouseIn = false;

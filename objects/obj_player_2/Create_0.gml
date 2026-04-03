@@ -79,10 +79,18 @@ function playerVariableLimit() {
 }
 
 // Barras de Vida y Cooldown
-healthBarAlpha = 0;
-cooldownBarAlpha = 0;
+healthBarAlpha = 0
+cooldownBarAlpha = 0
 barPositionY = (y + 0);
+
+// Texto de Cambio de Arma
 weaponTextAlpha = 0;
+
+// Linea de Punteria
+aimLineAlpha = 0;
+
+// Toggle para mostrar data
+showShipData = false;
 
 // Al unirse
 var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);

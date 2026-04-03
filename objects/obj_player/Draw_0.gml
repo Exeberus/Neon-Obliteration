@@ -1,15 +1,22 @@
 draw_self(); // Dibujarse a sí mismo
 
-if (!is_playerAlive) {
-	deathAlpha = clamp(deathAlpha + 0.03, 0, 1)
+// Dibujar efecto de muerte
+playerDeathEffect = function() {
+	if (!is_playerAlive) {
+		deathAlpha = clamp(deathAlpha + 0.03, 0, 1)
+		} else {
+		deathAlpha = clamp(deathAlpha - 0.03, 0, 1);
+	}
+	draw_set_font(fnt_pixel_small)
+	if (global.shipPlayerLives > 0) {
+		draw_text_colour(x - 45, y - 45, "Player " + string(Player) + " is death. ", image_blend, image_blend, image_blend, image_blend, deathAlpha);
 	} else {
-	deathAlpha = clamp(deathAlpha - 0.03, 0, 1);
+		draw_text_colour(x - 35, y - 45, "Out of Lives!", image_blend, image_blend, image_blend, image_blend, deathAlpha);
+	}
+	draw_sprite_ext(spr_normalElite_icon, 0, x, y, 1.5, 1.5, 0, image_blend, deathAlpha);
 }
-draw_set_font(fnt_pixel_small)
-draw_text_colour(x - 45, y - 45, "Player " + string(Player) + " is death. ", image_blend, image_blend, image_blend, image_blend, deathAlpha);
-draw_sprite_ext(spr_normalElite_icon, 0, x, y, 1.5, 1.5, 0, image_blend, deathAlpha);
 
-// Dibujar Texto de arma.
+// Dibujar Texto de arma
 drawWeaponChangetText = function() {
 	old_textFont = draw_get_font();
 	weaponTextAlpha -= 0.01;
@@ -104,10 +111,39 @@ drawCooldownBar = function() {
 	draw_set_alpha(1)
 }
 
+// Dibujar linea de Punteria
+drawAimLineEffect = function() {
+	draw_set_alpha(aimLineAlpha);
+	draw_line_colour(x, y, mouse_x, mouse_y, image_blend, image_blend);
+	if (mouse_check_button(mb_right)) { 
+		aimLineAlpha = clamp(aimLineAlpha + 0.08, 0, 0.8) } else { aimLineAlpha = clamp(aimLineAlpha - 0.16, 0, 0.8) };
+	draw_set_alpha(0);
+}
+
+// Mostrar Datos de jugador
+showShipInfo = function() {
+	if (keyboard_check_pressed(ord("Q"))) { showShipData = !showShipData };
+	
+	if (showShipData) {
+			healthBarAlpha = 1;
+			cooldownBarAlpha = 1;
+			weaponTextAlpha = 1;
+	} else {
+			healthBarAlpha = 0;
+			cooldownBarAlpha = 0;
+			weaponTextAlpha = 0;
+	}
+}
+
+showShipInfo();
+
 drawHealthBar(); // Dibujar Barra
 showHealthBar(); // Mostrar Barra
 
 drawCooldownBar(); // Dibujar Barra
 showCooldownBar();	// Mostrar Barra
 
-drawWeaponChangetText(); // Dibujar Texto de arma.
+drawWeaponChangetText(); // Dibujar Texto de arma
+playerDeathEffect(); // Dibujar efecto de muerte
+
+drawAimLineEffect(); //Dibujar linea de Punteria

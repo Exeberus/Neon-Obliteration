@@ -3,3 +3,6 @@ if (!global.is_menuOpen) {
 	image_yscale -= 0.1;
 	mouseIn = false;
 }
+
+markerActualScale = markerMaxScale;
+markerAlpha = 0;

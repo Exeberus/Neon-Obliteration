@@ -61,9 +61,13 @@ changeWeapon_joystick();
 if (is_playerAlive) { shipShoot(); }
 function playerDeath() {
 	if (shipHealth <= 0 && !resurrectPlayer) {
+		global.shipPlayerLives --;
+		audio_play_sound(snd_player_death, 1, false);
 		is_playerAlive = false;
 		resurrectPlayer = true;
-		alarm[0] = 3 * 60;
+		if (global.shipPlayerLives > 0) {
+			alarm[0] = 3 * 60;
+		}
 	}
 	
 	if (is_playerAlive && image_alpha < 1) {

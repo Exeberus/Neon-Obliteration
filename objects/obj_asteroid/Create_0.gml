@@ -2,18 +2,19 @@
 shipLevel = global.enemyShipLevel;
 shipName = "Asteroid";
 asteroidSize = ""
+applySize = false;
 is_asteroid = true;
 
 // // Defensa
-shipMaxHealth = 2 + (2 * shipLevel);
-shipHealth = shipMaxHealth
+shipMaxHealth = 1;
+shipHealth = shipMaxHealth;
 shipDefense = 0.1 + (0.2 * shipLevel);
 shipDodge = 0;
 
 // // Movimiento
-shipSpeed = 1 + (0.1 * shipLevel);
+shipSpeed = 0.3 + (0.1 * shipLevel);
 shipDirection = 0
-shipRotSpeed = 0;
+shipRotSpeed = random_range(-3, 3);
 
 // // Efecto al Spawnear
 shipSpawnAlpha = 0;
@@ -22,14 +23,5 @@ is_Spawned = false;
 image_alpha = 0;
 
 // Comportamiento de IA
-shipAI = noone;
-on_deathAI = scr_enemies_death;
-
-switch (asteroidSize) {
-	case "Small Asteroid":
-		sprite_index = choose(spr_asteroid_1_small, spr_asteroid_2_small, spr_asteroid_3_small, spr_asteroid_4_small, spr_asteroid_5_small)
-	break;
-	case "Medium Asteroid":
-		sprite_index = choose(spr_asteroid_1, spr_asteroid_2, spr_asteroid_3, spr_asteroid_4, spr_asteroid_5, spr_asteroid_6, spr_asteroid_7)
-	break;
-}
+shipAI = asteroid_AI;
+on_deathAI = asteroid_death;

@@ -1,14 +1,16 @@
 spawn_lightEnemyTimeActual += clamp(1, 0, spawn_lightEnemyTime);
+spawn_asteroidTimeActual += clamp(1, 0, spawn_asteroidTime);
 
 lightEnemyCant = instance_number(obj_arrow);
 
-if (spawn_lightEnemyTimeActual >= spawn_lightEnemyTime && lightEnemyCant < lightEnemyLimit && global.planetPhase >= 0) {
+spawnLightEnemy = function() { 
+	if (spawn_lightEnemyTimeActual >= spawn_lightEnemyTime && lightEnemyCant < lightEnemyLimit && global.planetPhase >= 0) {
 	spawn_lightEnemyTimeActual = 0;
 	// Spawn de Elites
 	var arrowIs_elite = false;
 	var arrow_eliteType = noone;
 	
-	var eliteChanceDrop = irandom(10);
+	var eliteChanceDrop = irandom(100);
 
 	if (eliteChanceDrop <= 5) {
 	    arrow_eliteType = "normalElite";
@@ -56,5 +58,35 @@ if (spawn_lightEnemyTimeActual >= spawn_lightEnemyTime && lightEnemyCant < light
 		shipAI = arrowAi;
 		is_elite = arrowIs_elite;
 		eliteType = arrow_eliteType;
+		}
 	}
 }
+spawnAsteroid = function() {
+	if (spawn_asteroidTimeActual >= spawn_asteroidTime && global.planetPhase >= 0) {
+		spawn_asteroidTimeActual = 0;
+		
+		var selectAsteroidSize = choose("Small Asteroid", "Medium Asteroid");
+		var asteroid_spriteSelected = noone;
+		var asteroid_colorSelected = choose (c_red, c_lime, c_aqua, c_yellow, c_fuchsia, c_orange);
+		
+		switch (selectAsteroidSize) {
+			case "Small Asteroid":
+				asteroid_spriteSelected = choose(spr_asteroid_1_small, spr_asteroid_2_small, spr_asteroid_3_small, spr_asteroid_4_small, spr_asteroid_5_small)
+			break;
+			case "Medium Asteroid":
+				asteroid_spriteSelected = choose(spr_asteroid_1, spr_asteroid_2, spr_asteroid_3, spr_asteroid_4, spr_asteroid_5, spr_asteroid_6, spr_asteroid_7)
+			break;
+		}
+		var asteroidSpawnPosition_x = random_range(0, room_width);
+		var asteroidSpawnPosition_y = random_range(0, 30);
+		
+		var asteroidSpawn = instance_create_layer(asteroidSpawnPosition_x, asteroidSpawnPosition_y, "Instances", obj_asteroid);
+		asteroidSpawn.asteroidSize = selectAsteroidSize;
+		asteroidSpawn.sprite_index = asteroid_spriteSelected;
+		asteroidSpawn.image_blend = asteroid_colorSelected;
+		
+	}
+}
+
+spawnLightEnemy();
+spawnAsteroid();
