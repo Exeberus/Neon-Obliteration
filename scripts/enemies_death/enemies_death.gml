@@ -1,7 +1,7 @@
 function enemies_death() {
 	// Detectar Muerte.
 	if (shipHealth <= 0) {
-		if (is_smallShip) {
+		if (is_lightEnemy) {
 			var smallExplotionSound = choose(snd_small_exeberus_ship_death_1, snd_small_exeberus_ship_death_2, snd_small_exeberus_ship_death_3);
 			audio_play_sound(smallExplotionSound, 1, false);
 		}
@@ -14,6 +14,7 @@ function enemies_death() {
 function asteroid_death() {
 	// Detectar Muerte.
 	if (shipHealth <= 0) {
+		currency_drop();
 		var smallExplotionSound = choose(snd_small_exeberus_ship_death_1, snd_small_exeberus_ship_death_2, snd_small_exeberus_ship_death_3);
 		audio_play_sound(smallExplotionSound, 1, false);
 		if (asteroidSize = "Small Asteroid") {
@@ -27,6 +28,7 @@ function asteroid_death() {
 					asteroidDivide.asteroidSize = "Small Asteroid";
 					asteroidDivide.sprite_index = choose(spr_asteroid_1_small, spr_asteroid_2_small, spr_asteroid_3_small, spr_asteroid_4_small, spr_asteroid_5_small);
 					asteroidDivide.image_blend = other.image_blend;
+					asteroidDivide.shipSpawnAlpha = 0.50;
 				}
 			}
 		}

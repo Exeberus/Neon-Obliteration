@@ -1,9 +1,15 @@
-// Variables
+// Principal Variables
 shipLevel = global.enemyShipLevel;
 shipName = "Asteroid";
-asteroidSize = ""
+asteroidSize = "";
+enemyCreditDrop = 0;
+enemyDropChance = global.dropChanceSelected;
+enemyDropCant = 0;
+
+// Boolean
 applySize = false;
 is_asteroid = true;
+is_floatingObject = true;
 
 // // Defensa
 shipMaxHealth = 1;

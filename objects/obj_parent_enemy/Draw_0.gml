@@ -74,6 +74,7 @@ if (is_elite) {
 	
 	draw_set_alpha(1)
 	draw_set_font(get_oldFont);
+	draw_set_colour(c_white);
 }
 
 draw_self();

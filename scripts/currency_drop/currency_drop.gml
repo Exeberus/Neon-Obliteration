@@ -1,5 +1,29 @@
 function currency_drop() {
 	global.galaxian_credits += enemyCreditDrop;
+	
+	var textCreate = instance_create_layer(x, y, "Instances", obj_floating_text);
+	with (textCreate) {
+	textLifeTime = 180;
+	textSpeed = 0.1;
+	textFont = fnt_pixel_small;
+	textRandomCreate_Value = 15;
+	textRandomPosition = false;
+	textFollow = false;
+	textToFollow = noone;
+	textFollowOffset_x = 0;
+	textFollowOffset_y = 0;
+	textMoveDirection = "";
+	textString = " GC +" + string(other.enemyCreditDrop) + "$";
+	textColour1 = c_aqua;
+	textColour2 = c_aqua;
+	textColour3 = c_aqua;
+	textColour4 = c_aqua;
+	textAlpha = 1;
+	textAlphaIncrease = 0;
+	textAlphaDecrease = 0.02;
+	textAlphaRoof = false;
+	}
+	
 	for (var i = 0; i < enemyDropCant; i ++) {
 	
 	dropChance = irandom(100);
@@ -19,7 +43,7 @@ function currency_drop() {
 				dropType = "Mineral";
 				dropName = "Starlit";
 				dropCant = round(1 + (0.10 * global.planetDifficulty));
-				
+			
 				switch (dropOreSize) {
 					case "Small": dropSprite = spr_starlit_small; break;
 					case "Medium": dropCant *= 2; dropSprite = spr_starlit_medium; break;
@@ -31,7 +55,7 @@ function currency_drop() {
 				dropType = "Mineral";
 				dropName = "Kaulite";
 				dropCant = round(1 + (0.25 * global.planetDifficulty));
-				
+			
 				switch (dropOreSize) {
 					case "Small": dropSprite = spr_kaulite_small; break;
 					case "Medium": dropCant *= 2; dropSprite = spr_kaulite_medium; break;
@@ -40,13 +64,13 @@ function currency_drop() {
 			break;
 		}
 		var dropItem = instance_create_layer(x + dropSpawnDistance, y + dropSpawnDistance, "Instances", obj_collectable_parent);
-		
+	
 		dropItem.currencyType = dropType;
 		dropItem.currencyCant = dropCant;
 		dropItem.currencyName = dropName;
 		dropItem.currencySprite = dropSprite;
 		dropItem.currencySize = 1;
-		
+	
 		dropItem.currencyFallSpeed = random(2);
 		dropItem.currencyMoveDirection = random(360);
 		dropItem.currencyMoveSpeed = random(1);
@@ -62,12 +86,12 @@ function consumable_drop() {
 	
 	if (dropChance < 50) {
 		var dropItem = instance_create_layer(x + dropSpawnDistance, y + dropSpawnDistance, "Instances", obj_collectable_parent);
-		
+	
 		dropItem.currencyType = "Consumable";
 		dropItem.currencyName = "Medic Kit";
 		dropItem.currencySprite = spr_medic_kit;
 		dropItem.currencySize = 1;
-		
+	
 		dropItem.currencyFallSpeed = random(2);
 		dropItem.currencyMoveDirection = random(360);
 		dropItem.currencyMoveSpeed = random(1);

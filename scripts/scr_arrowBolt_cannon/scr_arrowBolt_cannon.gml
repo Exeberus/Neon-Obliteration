@@ -4,8 +4,8 @@ function arrowBoltCannon_variables() {
 	global.shipPlayerWeaponBulletCollision = normalCollision; // Funcion para el comportamiento del impacto
 	global.shipPlayerWeaponMaxCooldown = 20; // Cooldown Maximo
 	
-	global.shipPlayerWeaponBulletDamage = (global.shipPlayerAttack * 2.00) // Daño de las Balas
-	global.shipPlayerWeaponBulletCant = 3; // Cantidad de Balas
+	global.shipPlayerWeaponBulletDamage = (global.shipPlayerAttack * 1.00) // Daño de las Balas
+	global.shipPlayerWeaponBulletCant = 1; // Cantidad de Balas
 	global.shipPlayerWeaponBulletSpeed = 6; // Velocidad de la bala
 	global.shipPlayerWeaponBulletSprite = spr_arrowBolt_bullet; // Declarar Sprite
 	global.shipPlayerWeaponBulletLifeTime = 0; // Tiempo de vida

@@ -1,8 +1,9 @@
 // Comportamiento
+is_floatingObject = false;
 shipLevel = 1;
 shipName = ""
 is_enemy = true;
-is_smallShip = noone;
+is_lightEnemy = noone;
 destroyInRoomOut = noone;
 enemyCreditDrop = 0;
 enemyDropChance = global.dropChanceSelected;

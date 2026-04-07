@@ -1,9 +1,10 @@
  // Inherit the parent event
 event_inherited();
+is_floatingObject = false;
 shipLevel = global.enemyShipLevel;
 shipName = "Arrow";
 is_enemy = true;
-is_smallShip = true;
+is_lightEnemy = true;
 enemyCreditDrop = 5 + (3 * shipLevel);
 enemyDropChance = global.dropChanceSelected;
 enemyDropCant = 1;
@@ -23,7 +24,7 @@ shipLifeTime = 0;
 // // Defensa
 shipMaxHealth = 2 + (2 * shipLevel);
 shipHealth = shipMaxHealth
-shipDefense = 0.1 + (0.3 * shipLevel);
+shipDefense = 0.1 + (0.1 * shipLevel);
 shipDodge = 5 + (0.2 * shipLevel);
 	
 // // Ataque
@@ -43,8 +44,8 @@ shipWeaponBulletCant = shipBulletCant;
 shipWeaponBulletLifeTime = 0;
 shipWeaponBulletWaitToPersecute = 0;
 
-shipWeaponBulletSprite = spr_arrowBolt_bullet;
-shipWeaponBulletColor = c_red;
+shipWeaponBulletSprite = spr_arrow_bullets;
+shipWeaponBulletColor = image_blend;
 shipWeaponSound = snd_arrowbolt_cannon_shoot;
 shipWeaponImpactSound = snd_arrowbolt_cannon_impact;
 	
