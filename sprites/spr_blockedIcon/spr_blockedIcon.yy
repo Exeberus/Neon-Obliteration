@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Icons",
-    "path":"folders/Sprites/UI/Icons.yy",
+    "name":"Customization Menu",
+    "path":"folders/Sprites/UI/Icons/Customization Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

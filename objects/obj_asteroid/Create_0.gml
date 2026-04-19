@@ -1,5 +1,6 @@
 // Principal Variables
 shipLevel = global.enemyShipLevel;
+is_enemy = true;
 shipName = "Asteroid";
 asteroidSize = "";
 enemyCreditDrop = 0;

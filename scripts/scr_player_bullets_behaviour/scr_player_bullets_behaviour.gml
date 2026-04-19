@@ -1,5 +1,4 @@
 function normalCollision() {
-
 	// Detectar si la bala acertó.
 	var hitChance = irandom(100);
 	var critChance = irandom(100);
@@ -16,47 +15,65 @@ function normalCollision() {
 				other.shipHealth -= damageInflict;
 				audio_play_sound(bulletImpactSound, 0, false);
 
-				var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
-				with (textCreate) {
-					textLifeTime = 90;
-					textSpeed = 0.65;
-					textFont = fnt_pixel_small_lb
-					textMoveDirection = "up";
-					textRandomCreate_Value = 10;
-					textString = "-" + string(damageInflict) + " Crit!";
-					textColour1 = c_red;
-					textColour2 = c_red;
-					textColour3 = c_orange;
-					textColour4 = c_orange;
-					textAlpha = 1;
-					textAlphaIncrease = 0.05;
-					textAlphaDecrease = 0.01;
-					textAlphaRoof = true;
+				if (bullet_is_AoE) {
+				
+					var aoe_radius = bulletAoERange;
+					var aoe_damage = damageInflict * 0.5;
+					var hitTarget = other;
+					var hitTargetID = other.id;
+					var hitX = x;
+					var hitY = y;
+					
+					with (obj_parent_enemy) {
+						if (id != hitTargetID.id) {
+							var dist = point_distance(x, y, hitX, hitY);
+							if (dist <= aoe_radius) {
+								shipHealth -= aoe_damage;
+								var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+								with (textCreate) {
+									textLifeTime = 90;
+									textSpeed = 0.5;
+									textFont = fnt_pixel_small;
+									textMoveDirection = "up";
+									textRandomCreate_Value = 10;
+									textString = "-" + string((aoe_damage));
+									textColour1 = c_orange;
+									textColour2 = c_orange;
+									textColour3 = c_red;
+									textColour4 = c_red;
+									textAlpha = 1;
+									textAlphaIncrease = 0.02;
+									textAlphaDecrease = 0.01;
+									textAlphaRoof = true;
+								}
+							}
+						}
+					}
+				}
+				if (global.show_damageIndicator) {
+					var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+					with (textCreate) {
+						textLifeTime = 90;
+						textSpeed = 0.65;
+						textFont = fnt_pixel_small_lb
+						textMoveDirection = "up";
+						textRandomCreate_Value = 10;
+						textString = "-" + string(damageInflict) + " Crit!";
+						textColour1 = c_red;
+						textColour2 = c_red;
+						textColour3 = c_orange;
+						textColour4 = c_orange;
+						textAlpha = 1;
+						textAlphaIncrease = 0.05;
+						textAlphaDecrease = 0.01;
+						textAlphaRoof = true;
+					}
 				}
 
 			} else { // Resist critico
-
 				audio_play_sound(bulletImpactSound, 0, false);
-
-				var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
-				with (textCreate) {
-					textLifeTime = 90;
-					textSpeed = 0.6;
-					textFont = fnt_pixel_small;
-					textMoveDirection = "up";
-					textRandomCreate_Value = 10;
-					textString = "Resist!";
-					textColour1 = c_orange;
-					textColour2 = c_orange;
-					textColour3 = c_red;
-					textColour4 = c_red;
-					textAlpha = 1;
-					textAlphaIncrease = 0.02;
-					textAlphaDecrease = 0.01;
-					textAlphaRoof = true;
-				}
+				resistText()
 			}
-
 		} else { // DAÑO NORMAL
 
 			var damageInflict = (bulletDamage - other.shipDefense);
@@ -66,74 +83,138 @@ function normalCollision() {
 				other.shipHealth -= damageInflict;
 				audio_play_sound(bulletImpactSound, 0, false);
 
-				var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
-				with (textCreate) {
-					textLifeTime = 90;
-					textSpeed = 0.55;
-					textFont = fnt_pixel_small
-					textMoveDirection = "up";
-					textRandomCreate_Value = 10;
-					textString = "-" + string(damageInflict);
-					textColour1 = c_red;
-					textColour2 = c_red;
-					textColour3 = c_red;
-					textColour4 = c_red;
-					textAlpha = 1;
-					textAlphaIncrease = 0.01;
-					textAlphaDecrease = 0.01;
-					textAlphaRoof = true;
+				if (bullet_is_AoE) {
+				
+					var aoe_radius = bulletAoERange;
+					var aoe_damage = damageInflict * 0.5;
+					var hitTargetID = other.id;
+					var hitX = x;
+					var hitY = y;
+				
+					with (obj_parent_enemy) {
+						if (id != hitTargetID.id) {
+							var dist = point_distance(x, y, hitX, hitY);
+							if (dist <= aoe_radius) {
+								shipHealth -= aoe_damage;
+								if (global.show_damageIndicator) {
+									var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+									with (textCreate) {
+										textLifeTime = 90;
+										textSpeed = 0.5;
+										textFont = fnt_pixel_small;
+										textMoveDirection = "up";
+										textRandomCreate_Value = 10;
+										textString = "-" + string((aoe_damage));
+										textColour1 = c_orange;
+										textColour2 = c_orange;
+										textColour3 = c_red;
+										textColour4 = c_red;
+										textAlpha = 1;
+										textAlphaIncrease = 0.02;
+										textAlphaDecrease = 0.01;
+										textAlphaRoof = true;
+									}
+								}
+							}
+						}
+					}
 				}
-
+				if (global.show_damageIndicator) {
+					var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+					with (textCreate) {
+						textLifeTime = 90;
+						textSpeed = 0.55;
+						textFont = fnt_pixel_small
+						textMoveDirection = "up";
+						textRandomCreate_Value = 10;
+						textString = "-" + string(damageInflict);
+						textColour1 = c_red;
+						textColour2 = c_red;
+						textColour3 = c_red;
+						textColour4 = c_red;
+						textAlpha = 1;
+						textAlphaIncrease = 0.01;
+						textAlphaDecrease = 0.01;
+						textAlphaRoof = true;
+					}
+				}
 			} else { // Resist normal
-
 				audio_play_sound(bulletImpactSound, 0, false);
-
-				var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
-				with (textCreate) {
-					textLifeTime = 90;
-					textSpeed = 0.6;
-					textFont = fnt_pixel_small
-					textMoveDirection = "up";
-					textRandomCreate_Value = 10;
-					textString = "Resist!";
-					textColour1 = c_orange;
-					textColour2 = c_orange;
-					textColour3 = c_red;
-					textColour4 = c_red;
-					textAlpha = 1;
-					textAlphaIncrease = 0.02;
-					textAlphaDecrease = 0.01;
-					textAlphaRoof = true;
-				}
+				resistText()
 			}
 		}
 
 		instance_destroy();
 
 	} else { // Dodge
-
-		var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
-		with (textCreate) {
-			textLifeTime = 90;
-			textSpeed = 0.6;
-			textFont = fnt_pixel_small
-			textMoveDirection = "up";
-			textRandomCreate_Value = 10;
-			textString = "Dodge!";
-			textColour1 = c_orange;
-			textColour2 = c_orange;
-			textColour3 = c_red;
-			textColour4 = c_red;
-			textAlpha = 1;
-			textAlphaIncrease = 0.02;
-			textAlphaDecrease = 0.01;
-			textAlphaRoof = true;
-		}
-
+		dodgeText();
 		instance_destroy();
 	}
 }
 
+function resistText() {
+	if (global.show_damageIndicator) {
+		var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+			with (textCreate) {
+				textLifeTime = 90;
+				textSpeed = 0.6;
+				textFont = fnt_pixel_small;
+				textMoveDirection = "up";
+				textRandomCreate_Value = 10;
+				textString = "Resist!";
+				textColour1 = c_orange;
+				textColour2 = c_orange;
+				textColour3 = c_red;
+				textColour4 = c_red;
+				textAlpha = 1;
+				textAlphaIncrease = 0.02;
+				textAlphaDecrease = 0.01;
+				textAlphaRoof = true;
+		}
+	}
+}
+function dodgeText() {
+	if (global.show_damageIndicator) {
+		var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+			with (textCreate) {
+				textLifeTime = 90;
+				textSpeed = 0.6;
+				textFont = fnt_pixel_small
+				textMoveDirection = "up";
+				textRandomCreate_Value = 10;
+				textString = "Dodge!";
+				textColour1 = c_orange;
+				textColour2 = c_orange;
+				textColour3 = c_red;
+				textColour4 = c_red;
+				textAlpha = 1;
+				textAlphaIncrease = 0.02;
+				textAlphaDecrease = 0.01;
+				textAlphaRoof = true;
+		}
+	}
+}
+function damageText() {
+	if (global.show_damageIndicator) {
+		var textCreate = instance_create_layer(x, y, "Text", obj_floating_text);
+			with (textCreate) {
+				textLifeTime = 90;
+				textSpeed = 0.55;
+				textFont = fnt_pixel_small
+				textMoveDirection = "up";
+				textRandomCreate_Value = 10;
+				textString = "-" + string(damageInflict);
+				textColour1 = c_red;
+				textColour2 = c_red;
+				textColour3 = c_red;
+				textColour4 = c_red;
+				textAlpha = 1;
+				textAlphaIncrease = 0.01;
+				textAlphaDecrease = 0.01;
+				textAlphaRoof = true;
+		}
+	}
+}
 function normalProyectile() {
 	x += lengthdir_x(bulletSpeed, bulletDirection);
 	y += lengthdir_y(bulletSpeed, bulletDirection);

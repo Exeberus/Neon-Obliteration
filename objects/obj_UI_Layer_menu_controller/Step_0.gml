@@ -14,13 +14,16 @@ if (global.is_menuLayerEnabled) {
 // Detectar si hay un menu abierto
 
 // Menus :
-is_menuSkinsVisible = layer_get_visible("menuSkins");
+var is_menuSkinsVisible = layer_get_visible("menuSkins");
+var is_menuConfigVisible = layer_get_visible("menuConfig");
+
 layer_text_text(get_solarSystemId, string(global.actualSolarSystemName));
 layer_text_text(get_solarSystemDificultyId, string(global.actualSolarSystemDificulty));
 layer_text_blend(get_solarSystemId, global.actualSolarSystemColor);
 
 // Condiciones
-if (is_menuSkinsVisible) {
+if (is_menuSkinsVisible ||
+	is_menuConfigVisible) {
 	global.is_menuOpen = true;
 } else {
 	global.is_menuOpen = false;

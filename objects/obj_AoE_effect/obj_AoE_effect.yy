@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_background_orbit_circle_spaceMap",
+  "%Name":"obj_AoE_effect",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_background_orbit_circle_spaceMap",
+  "name":"obj_AoE_effect",
   "overriddenProperties":[],
   "parent":{
-    "name":"Particles",
-    "path":"folders/Objetos/Misc/Background/Particles.yy",
+    "name":"Bullets Effects",
+    "path":"folders/Objetos/Misc/Bullets Effects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

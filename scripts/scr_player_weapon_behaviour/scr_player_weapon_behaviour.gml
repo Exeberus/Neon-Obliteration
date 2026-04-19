@@ -20,6 +20,8 @@ function player_shootBehaviour() {
 			bulletLifeTime = playerId.shipWeaponBulletLifeTime;
 			bulletDirection = actualShootAngle;
 			bulletWaitToPersecute = playerId.shipWeaponBulletWaitToPersecute;
+			bullet_is_AoE = playerId.shipWeapon_is_AoE;
+			bulletAoERange = playerId.shipWeaponAoERange;
 			sprite_index = playerId.shipWeaponBulletSprite;
 			image_blend = playerId.image_blend;
 		}
@@ -39,6 +41,8 @@ function resetWeapon() {
 	shipWeaponBulletSprite = global.shipPlayerWeaponBulletSprite;
 	shipWeaponBulletLifeTime = global.shipPlayerWeaponBulletLifeTime;
 	shipWeaponBulletWaitToPersecute = global.shipPlayerWeaponBulletWaitToPersecute;
+	shipWeapon_is_AoE = global.shipPlayerWeapon_is_AoE;
+	shipWeaponAoERange = global.shipPlayerWeaponAoERange;
 	
 	shipWeaponSound = global.shipPlayerWeaponSound;
 	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;

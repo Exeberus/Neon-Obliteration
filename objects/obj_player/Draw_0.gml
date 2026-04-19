@@ -123,15 +123,20 @@ drawAimLineEffect = function() {
 // Mostrar Datos de jugador
 showShipInfo = function() {
 	if (keyboard_check_pressed(ord("Q"))) { showShipData = !showShipData };
-	
 	if (showShipData) {
+			old_textFont = draw_get_font();
+			
+			draw_set_font(fnt_pixel_small)
+			draw_text_colour(x - 45, y - 40, "Player " + string(Player), image_blend, image_blend, image_blend, image_blend, 1)
+			
+			draw_set_font(old_textFont)
 			healthBarAlpha = 1;
 			cooldownBarAlpha = 1;
 			weaponTextAlpha = 1;
 	} else {
-			healthBarAlpha = 0;
-			cooldownBarAlpha = 0;
-			weaponTextAlpha = 0;
+			healthBarAlpha = healthBarAlpha;
+			cooldownBarAlpha = cooldownBarAlpha;
+			weaponTextAlpha -= 0.01;
 	}
 }
 

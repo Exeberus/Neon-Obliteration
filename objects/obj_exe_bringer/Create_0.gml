@@ -30,7 +30,7 @@ shipDodge = 2 + (0.1 * shipLevel);
 // // Ataque
 // Cañon
 shipCannonVariant = spr_exe_bringer_singleTurret;
-shipTurretBaseRot = 0;
+shipTurretBaseRot = random(360);
 shipCannonRange = 350;
 shipCannonVariantApplied = false;
 
@@ -52,7 +52,7 @@ shipWeaponBulletWaitToPersecute = 0;
 
 shipWeaponBulletSprite = spr_arrowBolt_bullet;
 shipWeaponBulletColor = noone;
-shipWeaponSound = snd_arrowbolt_cannon_shoot;
+shipWeaponSound = snd_exe_bringer_singleTurret_shoot;
 shipWeaponImpactSound = snd_arrowbolt_cannon_impact;
 	
 // // Movimiento

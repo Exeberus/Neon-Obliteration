@@ -48,6 +48,8 @@ if (controller != noone) {
 	shipWeaponBulletSprite = global.shipPlayerWeaponBulletSprite;
 	shipWeaponBulletLifeTime = global.shipPlayerWeaponBulletLifeTime;
 	shipWeaponBulletWaitToPersecute = global.shipPlayerWeaponBulletWaitToPersecute;
+	shipWeapon_is_AoE = global.shipPlayerWeapon_is_AoE;
+	shipWeaponAoERange = global.shipPlayerWeaponAoERange;
 	
 	shipWeaponSound = global.shipPlayerWeaponSound;
 	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;

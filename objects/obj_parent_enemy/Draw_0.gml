@@ -69,7 +69,7 @@ if (is_elite) {
 	var nameStringLevel = string_width(shipLevel)
 	
 	draw_text_color(room_width / 2 - nameString / 2, 8, string(shipName), eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteEffectColor, eliteDataAlpha);
-	draw_text_color(room_width / 2 + 110 - nameString - nameStringLevel, 8, "LvL: " + string(shipLevel), c_white, c_white, c_white, c_white, eliteDataAlpha);
+	draw_text_color(room_width / 2 + 85, 25, "LvL: " + string(shipLevel), c_white, c_white, c_white, c_white, eliteDataAlpha);
 	
 	
 	draw_set_alpha(1)

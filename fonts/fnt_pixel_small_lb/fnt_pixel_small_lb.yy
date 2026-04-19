@@ -110,7 +110,7 @@
     "9647":{"character":9647,"h":15,"offset":3,"shift":13,"w":7,"x":72,"y":104,},
   },
   "hinting":0,
-  "includeTTF":false,
+  "includeTTF":true,
   "interpreter":0,
   "italic":false,
   "kerningPairs":[],

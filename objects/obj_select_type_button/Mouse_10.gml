@@ -1,0 +1,5 @@
+// Efecto al entrar el cursor
+if (!global.is_selecting_panel || ignorate_selectPanel_block) {
+	audio_play_sound(snd_mouse_on_button, 1, false);
+	image_blend = c_yellow;
+}

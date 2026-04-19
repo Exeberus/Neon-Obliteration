@@ -110,7 +110,7 @@
     "9647":{"character":9647,"h":17,"offset":3,"shift":16,"w":9,"x":195,"y":59,},
   },
   "hinting":0,
-  "includeTTF":false,
+  "includeTTF":true,
   "interpreter":0,
   "italic":false,
   "kerningPairs":[],
@@ -138,6 +138,6 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "TTFName":"",
+  "TTFName":"C:\\Users\\megad\\GameMakerProjects\\Neon-Obliteration\\fonts\\fnt_pixel_medium\\Minecraft.ttf",
   "usesSDF":false,
 }

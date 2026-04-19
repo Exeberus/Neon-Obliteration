@@ -1,27 +1,29 @@
 function currency_drop() {
 	global.galaxian_credits += enemyCreditDrop;
 	
-	var textCreate = instance_create_layer(x, y, "Instances", obj_floating_text);
-	with (textCreate) {
-	textLifeTime = 180;
-	textSpeed = 0.1;
-	textFont = fnt_pixel_small;
-	textRandomCreate_Value = 15;
-	textRandomPosition = false;
-	textFollow = false;
-	textToFollow = noone;
-	textFollowOffset_x = 0;
-	textFollowOffset_y = 0;
-	textMoveDirection = "";
-	textString = " GC +" + string(other.enemyCreditDrop) + "$";
-	textColour1 = c_aqua;
-	textColour2 = c_aqua;
-	textColour3 = c_aqua;
-	textColour4 = c_aqua;
-	textAlpha = 1;
-	textAlphaIncrease = 0;
-	textAlphaDecrease = 0.02;
-	textAlphaRoof = false;
+	if (global.show_currencyIndicator) {
+		var textCreate = instance_create_layer(x, y, "Instances", obj_floating_text);
+		with (textCreate) {
+		textLifeTime = 180;
+		textSpeed = 0.1;
+		textFont = fnt_pixel_small;
+		textRandomCreate_Value = 15;
+		textRandomPosition = false;
+		textFollow = false;
+		textToFollow = noone;
+		textFollowOffset_x = 0;
+		textFollowOffset_y = 0;
+		textMoveDirection = "";
+		textString = " GC +" + string(other.enemyCreditDrop) + "$";
+		textColour1 = c_aqua;
+		textColour2 = c_aqua;
+		textColour3 = c_aqua;
+		textColour4 = c_aqua;
+		textAlpha = 1;
+		textAlphaIncrease = 0;
+		textAlphaDecrease = 0.02;
+		textAlphaRoof = false;
+		}
 	}
 	
 	for (var i = 0; i < enemyDropCant; i ++) {

@@ -13,6 +13,8 @@ function arrowBoltCannon_variables() {
 	
 	global.shipPlayerWeaponSound = snd_arrowbolt_cannon_shoot; // Declarar Sonido de Disparo
 	global.shipPlayerWeaponImpactSound = snd_arrowbolt_cannon_impact; // Declarar Sonido de Disparo
+	global.shipPlayerWeapon_is_AoE = false; // Declarar si inflige daño en Área
+	global.shipPlayerWeaponAoERange = 0; // Radio de daño en Área
 }
 function arrowBoltCannon_bulletBehaviour() {
 	x += lengthdir_x(bulletSpeed, bulletDirection);

@@ -13,6 +13,8 @@ function argorusCannon_variables() {
 	
 	global.shipPlayerWeaponSound = snd_argorus_cannon_shoot; // Declarar Sonido de Disparo
 	global.shipPlayerWeaponImpactSound = snd_argorus_cannon_impact; // Declarar Sonido de Disparo
+	global.shipPlayerWeapon_is_AoE = true; // Declarar si inflige daño en Área
+	global.shipPlayerWeaponAoERange = 100; // Radio de daño en Área
 }
 function argorusCannon_bulletBehaviour() {
 	var bulletId = id;

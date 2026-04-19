@@ -3,7 +3,7 @@ function spawnArrow() {
 	var arrowIs_elite = false;
 	var arrow_eliteType = noone;
 	
-	var eliteChanceDrop = irandom(100);
+	var eliteChanceDrop = irandom(10);
 
 	if (eliteChanceDrop <= 5) {
 	    arrow_eliteType = "normalElite";
@@ -59,8 +59,9 @@ function spawnExeBringer() {
 	// Spawn de Elites
 	var exeBringerIs_elite = false;
 	var exeBringer_eliteType = noone;
+	var exeBringer_turretRotRandom = irandom(360);
 	
-	var eliteChanceDrop = irandom(100);
+	var eliteChanceDrop = irandom(10);
 
 	if (eliteChanceDrop <= 5) {
 	    exeBringer_eliteType = "normalElite";
@@ -100,6 +101,7 @@ function spawnExeBringer() {
 	var exeBringerSpawn = instance_create_layer(exeBringerSpawnPosition_x, exeBringerSpawnPosition_y, "Instances", obj_exe_bringer);
 	with (exeBringerSpawn) {
 		shipMaxHealth *= global.cantPlayers;
+		image_angle = exeBringer_turretRotRandom;
 		sprite_index = exeBringerVariant;
 		image_blend = c_red;
 		mask_index = spr_exe_bringer;

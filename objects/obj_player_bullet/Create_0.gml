@@ -1,4 +1,6 @@
 // Variables de Bala
+bullet_is_AoE = noone;
+bulletAoERange = 0;
 bulletBehaviour = noone;
 bulletImpactSound = noone;
 bulletCollision = noone;

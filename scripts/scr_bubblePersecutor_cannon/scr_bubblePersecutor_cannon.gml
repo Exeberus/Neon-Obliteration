@@ -13,6 +13,8 @@ function bubblePersecutorCannon_variables() {
 	
 	global.shipPlayerWeaponSound = snd_bubblePersecutor_shoot; // Declarar Sonido de Disparo
 	global.shipPlayerWeaponImpactSound = snd_bubblePersecutor_impact; // Declarar Sonido de Disparo
+	global.shipPlayerWeapon_is_AoE = true; // Declarar si inflige daño en Área
+	global.shipPlayerWeaponAoERange = 50; // Radio de daño en Área
 }
 function bubblePersecutorCannon_bulletBehaviour() {
 	bulletMaxDistance = 250;

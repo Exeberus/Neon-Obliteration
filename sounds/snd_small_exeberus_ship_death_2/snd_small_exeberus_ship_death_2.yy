@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_small_exeberus_ship_death_2",
   "parent":{
-    "name":"exeberus",
-    "path":"folders/Sonidos/Enemies/death/exeberus.yy",
+    "name":"Exeberus",
+    "path":"folders/Sonidos/Enemies/Death/Exeberus.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

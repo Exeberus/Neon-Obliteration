@@ -46,7 +46,7 @@ shipWeaponBulletWaitToPersecute = 0;
 
 shipWeaponBulletSprite = spr_arrow_bullets;
 shipWeaponBulletColor = image_blend;
-shipWeaponSound = snd_arrowbolt_cannon_shoot;
+shipWeaponSound = snd_arrow_shoot;
 shipWeaponImpactSound = snd_arrowbolt_cannon_impact;
 	
 // // Movimiento
