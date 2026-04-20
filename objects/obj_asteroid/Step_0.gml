@@ -19,3 +19,5 @@ if (!applySize) {
 		break;
 	}
 }
+	
+limitVariables();

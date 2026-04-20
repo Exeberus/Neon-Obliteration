@@ -1,17 +1,3 @@
-// Movimiento
-playerMovement_joystick();
-move_wrap(true, true, 16)
-
-// Ataque y cambio de arma
-function shipShoot() {
-	shipWeaponActualCooldown ++;
-	shipWeaponActualCooldown = clamp(shipWeaponActualCooldown, 0, shipWeaponMaxCooldown);
-	var playerId = id;
-	
-	if (gamepad_button_check(0, gp_shoulderr) && shipWeaponActualCooldown == shipWeaponMaxCooldown) {
-		player_shootBehaviour();
-	}
-}
 function changeWeapon_joystick() {
 	// Checkear que arma esta actualmente
 	switch (shipActualSlot) {
@@ -57,25 +43,11 @@ function changeWeapon_joystick() {
 }
 changeWeapon_joystick();
 
-
-if (is_playerAlive) { shipShoot(); }
-function playerDeath() {
-	if (shipHealth <= 0 && !resurrectPlayer) {
-		global.shipPlayerLives --;
-		audio_play_sound(snd_player_death, 1, false);
-		is_playerAlive = false;
-		resurrectPlayer = true;
-		if (global.shipPlayerLives > 0) {
-			alarm[0] = 3 * 60;
-		}
-	}
-	
-	if (is_playerAlive && image_alpha < 1) {
-		image_alpha += 0.03;
-	} else if (!is_playerAlive && image_alpha > 0.3) {
-		image_alpha -= 0.01;
-	}
-}
-
-playerDeath();
 playerVariableLimit();
+player_regeneration();
+player_death();
+player_shoot();
+
+// Movimiento
+playerMovement_joystick();
+move_wrap(true, true, 16)

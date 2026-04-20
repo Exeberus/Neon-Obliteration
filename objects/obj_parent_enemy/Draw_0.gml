@@ -1,4 +1,5 @@
 if (is_elite) {
+	eliteDrawEffects();
 	var mouseDistance = point_distance(x, y, mouse_x, mouse_y);
 	if (mouseDistance < 30) { eliteDataAlpha = 1; } else {  eliteDataAlpha = 0; }
 	
@@ -78,3 +79,10 @@ if (is_elite) {
 }
 
 draw_self();
+
+function eliteDrawEffects() {
+	eliteAuraRot ++;
+	if (is_healingWave) {
+	draw_sprite_ext(spr_healingAura, 0, x, y, 1 + image_xscale, 1 + image_yscale, eliteAuraRot, c_white, 0.70);
+	}
+}

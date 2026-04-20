@@ -22,7 +22,7 @@ destroyInRoomOut = true;
 shipLifeTime = 900;
 	
 // // Defensa
-shipMaxHealth = 3 + (3 * shipLevel);
+shipMaxHealth = 2 + (2 * shipLevel);
 shipHealth = shipMaxHealth
 shipDefense = 0.25 + (0.2 * shipLevel);
 shipDodge = 2 + (0.1 * shipLevel);
@@ -34,7 +34,7 @@ shipTurretBaseRot = random(360);
 shipCannonRange = 350;
 shipCannonVariantApplied = false;
 
-shipAttack = 2 + (1 * shipLevel);
+shipAttack = 1 + (1.5* shipLevel);
 shipAttackCooldown = 2 * 60;
 shipAttackActualCooldown = shipAttackCooldown;
 shipBulletSpeed = 4 + (0.2 * shipLevel);

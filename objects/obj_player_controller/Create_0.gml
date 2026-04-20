@@ -1,7 +1,7 @@
 // Controlador de variables para el Jugador
 global.shipPlayerName = "The Crow";
 global.shipPlayerLevel = 1;
-global.shipPlayerLives = 0;
+global.shipPlayerLives = 3;
 
 // Movimiento.
 global.shipPlayerSpeed = 0;

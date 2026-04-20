@@ -8,7 +8,7 @@ if (other.is_playerAlive) {
 				global.starlit += currencyCant;
 			break;
 			case "Kaulite":
-				global.Kaulite += currencyCant;
+				global.kaulite += currencyCant;
 			break;
 		}
 		if (global.show_currencyIndicator) {

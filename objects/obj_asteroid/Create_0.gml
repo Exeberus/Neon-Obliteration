@@ -32,3 +32,11 @@ image_alpha = 0;
 // Comportamiento de IA
 shipAI = asteroid_AI;
 on_deathAI = asteroid_death;
+
+// Limitar Variables
+function limitVariables() {
+	shipHealth = clamp(shipHealth, 0, shipMaxHealth);
+	shipDefense = clamp(shipDefense, 0, infinity);
+	shipDodge = clamp(shipDodge, 0, infinity);
+	shipSpeed = clamp(shipSpeed, 0, 3.5);
+}

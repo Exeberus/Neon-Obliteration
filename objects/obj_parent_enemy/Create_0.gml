@@ -17,9 +17,15 @@ eliteType = "";
 eliteEffect1 = "";
 eliteEffect2 = "";
 eliteEffect3 = "";
+
+eliteAuraRot = 0;
+
+// Efectos pasivos de Elite
+is_healingWave = false;
 	
 // // Defensa
 shipHealth = 0;
+shipMaxHealth = 0;
 shipDefense = 0;
 shipDodge = 0;
 	
