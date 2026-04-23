@@ -4,7 +4,7 @@ function bubblePersecutorCannon_variables() {
 	global.shipPlayerWeaponBulletCollision = normalCollision; // Funcion para el comportamiento del impacto
 	global.shipPlayerWeaponMaxCooldown = 50; // Cooldown Maximo
 	
-	global.shipPlayerWeaponBulletDamage = (global.shipPlayerAttack * 0.85) // Daño de las Balas
+	global.shipPlayerWeaponBulletDamage = (shipAttack * 0.85) // Daño de las Balas
 	global.shipPlayerWeaponBulletCant = 2; // Cantidad de Balas
 	global.shipPlayerWeaponBulletSpeed = 4; // Velocidad de la bala
 	global.shipPlayerWeaponBulletSprite = spr_bubblePersecutor_bullet; // Declarar Sprite

@@ -6,6 +6,7 @@ shipName = "Exe-Bringer";
 is_enemy = true;
 is_lightEnemy = true;
 enemyCreditDrop = 8 + (5 * shipLevel);
+enemyExperienceDrop = 0.4;
 enemyDropChance = global.dropChanceSelected;
 enemyDropCant = 1;
 

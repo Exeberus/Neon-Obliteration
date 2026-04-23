@@ -46,7 +46,8 @@ changeWeapon_joystick();
 playerVariableLimit();
 player_regeneration();
 player_death();
-player_shoot();
+player_shoot(true);
+shipPlayer_levelup();
 
 // Movimiento
 playerMovement_joystick();

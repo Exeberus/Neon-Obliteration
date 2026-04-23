@@ -23,7 +23,7 @@ textAlphaDecrease = 0;
 textAlphaIncrease = 0;
 textAlphaRoof = false;
 
-// Parametros para copiar.
+//Parametros para copiar.
 //textLifeTime = 0;
 //textSpeed = 0;
 //textFont = noone;

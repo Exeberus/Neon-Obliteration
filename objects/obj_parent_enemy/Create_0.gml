@@ -6,6 +6,7 @@ is_enemy = true;
 is_lightEnemy = noone;
 destroyInRoomOut = noone;
 enemyCreditDrop = 0;
+enemyExperienceDrop = 0;
 enemyDropChance = global.dropChanceSelected;
 enemyDropCant = 0;
 

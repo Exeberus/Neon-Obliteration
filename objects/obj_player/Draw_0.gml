@@ -8,7 +8,7 @@ playerDeathEffect = function() {
 		deathAlpha = clamp(deathAlpha - 0.03, 0, 1);
 	}
 	draw_set_font(fnt_pixel_small)
-	if (global.shipPlayerLives > 0) {
+	if (global.shipPlayerLives >= 0) {
 		draw_text_colour(x - 45, y - 45, "Player " + string(Player) + " is death. ", image_blend, image_blend, image_blend, image_blend, deathAlpha);
 	} else {
 		draw_text_colour(x - 35, y - 45, "Out of Lives!", image_blend, image_blend, image_blend, image_blend, deathAlpha);
@@ -81,9 +81,9 @@ showCooldownBar = function() {
 }
 drawCooldownBar = function() {
 	if (healthBarAlpha > 0) {
-		barPositionY = (y + 10);
+		cooldownBarPositionY = (y + 10);
 	} else {
-		barPositionY = (y + 0);
+		cooldownBarPositionY = (y + 0);
 	}
 	
 	var barWidth = 50;
@@ -94,7 +94,7 @@ drawCooldownBar = function() {
 
 	// Salud Restante
 	draw_set_colour(c_black)
-	draw_rectangle(x - barWidth / 2, barPositionY + 20, x + barWidth / 2, barPositionY + 20 + barHeight, false);
+	draw_rectangle(x - barWidth / 2, cooldownBarPositionY + 20, x + barWidth / 2, cooldownBarPositionY + 20 + barHeight, false);
 
 	// Color de la barra
 	var barColour = merge_colour(c_yellow, c_orange, shipCooldownPercent)
@@ -103,20 +103,73 @@ drawCooldownBar = function() {
 	// Salud Actual
 	draw_rectangle(
 		x - barWidth / 2,
-		barPositionY + 20,
+		cooldownBarPositionY + 20,
 		x - barWidth / 2 + barWidth * shipCooldownPercent,
-		barPositionY + 20 + barHeight,
+		cooldownBarPositionY + 20 + barHeight,
 		true
 	);
 	draw_set_alpha(1)
 }
 
+drawExperienceBar = function() {
+	if (healthBarAlpha > 0 && cooldownBarAlpha > 0) {
+		experienceBarPositionY = (y + 20);
+	}
+	else if (healthBarAlpha > 0 || cooldownBarAlpha > 0) {
+		experienceBarPositionY = (y + 10);
+	}
+	else {
+		experienceBarPositionY = (y + 0);
+	}
+	
+	var barWidth = 60;
+	var barHeight = 5;
+
+	var shipExperiencePercent = shipExperience / shipMaxExperience;
+	draw_set_alpha(experienceBarAlpha);
+
+	// Experiencia Restante
+	draw_set_colour(c_black)
+	draw_rectangle(x - barWidth / 2, experienceBarPositionY + 20, x + barWidth / 2, experienceBarPositionY + 20 + barHeight, false);
+
+	// Color de la barra
+	if (shipActualLevel < shipMaxLevel) {
+		var barColour = merge_colour(c_purple, c_fuchsia, shipExperiencePercent)
+	} else {
+		var barColour = c_red;
+	}
+	draw_set_colour(barColour);
+
+	// Experiencia Actual
+	draw_rectangle(
+		x - barWidth / 2,
+		experienceBarPositionY + 20,
+		x - barWidth / 2 + barWidth * shipExperiencePercent,
+		experienceBarPositionY + 20 + barHeight,
+		true
+	);
+	
+	// Texto de nivel
+	var oldFont = draw_get_font();
+	draw_set_font(fnt_pixel_small);
+	draw_text_colour(x + 2 + (barWidth / 2), experienceBarPositionY + 19, string(shipActualLevel), barColour, barColour, barColour, barColour, 1);
+	draw_set_font(oldFont);
+	
+	draw_set_alpha(1)
+}
+
 // Dibujar linea de Punteria
 drawAimLineEffect = function() {
+	var mouseX_distance = point_distance(x, y, mouse_x, mouse_y)
+	var aimlength_x = x + lengthdir_x(mouseX_distance, image_angle);
+	var aimlength_y = y + lengthdir_y(mouseX_distance, image_angle);
+	
 	draw_set_alpha(aimLineAlpha);
-	draw_line_colour(x, y, mouse_x, mouse_y, image_blend, image_blend);
-	if (mouse_check_button(mb_right)) { 
-		aimLineAlpha = clamp(aimLineAlpha + 0.08, 0, 0.8) } else { aimLineAlpha = clamp(aimLineAlpha - 0.16, 0, 0.8) };
+	draw_line_colour(x, y, aimlength_x, aimlength_y, image_blend, image_blend);
+	draw_sprite_ext(spr_mouseCursorCombat, 0, aimlength_x, aimlength_y, 1, 1, 0, image_blend, aimLineAlpha);
+	
+	if (mouse_check_button_pressed(mb_right)) { toggleAimLine = !toggleAimLine }
+	if (toggleAimLine) { aimLineAlpha = clamp(aimLineAlpha + 0.08, 0, 0.8) } else { aimLineAlpha = clamp(aimLineAlpha - 0.16, 0, 0.8) };
 	draw_set_alpha(0);
 }
 
@@ -147,6 +200,8 @@ showHealthBar(); // Mostrar Barra
 
 drawCooldownBar(); // Dibujar Barra
 showCooldownBar();	// Mostrar Barra
+
+drawExperienceBar();	// Mostrar Barra
 
 drawWeaponChangetText(); // Dibujar Texto de arma
 playerDeathEffect(); // Dibujar efecto de muerte

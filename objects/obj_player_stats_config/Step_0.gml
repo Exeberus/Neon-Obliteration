@@ -11,7 +11,7 @@ switch (player) {
 			sprite_index = spr_playerStateIcon_death;
 			image_angle = 0;
 		}
-		layer_text_text(get_textLayerPlayerLives, "x" + string(global.shipPlayerLives));
+		if (global.shipPlayerLives >= 0) { layer_text_text(get_textLayerPlayerLives, "x" + string(global.shipPlayerLives)); } else { layer_text_text(get_textLayerPlayerLives, "") };
 		layer_text_blend(get_textLayerPlayerLives, global.shipPlayerColor);
 	}
 	break;

@@ -4,7 +4,7 @@ function sniperithCannon_variables() {
 	global.shipPlayerWeaponBulletCollision = normalCollision; // Funcion para el comportamiento del impacto
 	global.shipPlayerWeaponMaxCooldown = 55; // Cooldown Maximo
 	
-	global.shipPlayerWeaponBulletDamage = (global.shipPlayerAttack * 2.00) // Daño de las Balas
+	global.shipPlayerWeaponBulletDamage = (shipAttack * 2.00) // Daño de las Balas
 	global.shipPlayerWeaponBulletCant = 1; // Cantidad de Balas
 	global.shipPlayerWeaponBulletSpeed = 12; // Velocidad de la bala
 	global.shipPlayerWeaponBulletSprite = spr_sniperith_bullet; // Declarar Sprite

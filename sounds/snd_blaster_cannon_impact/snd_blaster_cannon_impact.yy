@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_blaster_cannon_impact",
+  "audioGroupId":{
+    "name":"audiogroup_sfx",
+    "path":"audiogroups/audiogroup_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.83,
+  "exportDir":"",
+  "name":"snd_blaster_cannon_impact",
+  "parent":{
+    "name":"Blaster",
+    "path":"folders/Sonidos/Player/Weapons/Cannons/Blaster.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_blaster_cannon_impact.wav",
+  "volume":0.7,
+}

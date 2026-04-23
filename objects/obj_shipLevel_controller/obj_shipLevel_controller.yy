@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_text_test",
+  "%Name":"obj_shipLevel_controller",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_text_test",
+  "name":"obj_shipLevel_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Floating Text",
-    "path":"folders/Objetos/Misc/Floating Text.yy",
+    "name":"Controllers",
+    "path":"folders/Objetos/Player/Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

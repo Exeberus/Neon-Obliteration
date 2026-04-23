@@ -3,7 +3,7 @@ function spawnArrow() {
 	var arrowIs_elite = false;
 	var arrow_eliteType = noone;
 	
-	var eliteChanceDrop = irandom(10);
+	var eliteChanceDrop = irandom(100);
 
 	if (eliteChanceDrop <= 5) {
 	    arrow_eliteType = "normalElite";
@@ -61,7 +61,7 @@ function spawnExeBringer() {
 	var exeBringer_eliteType = noone;
 	var exeBringer_turretRotRandom = irandom(360);
 	
-	var eliteChanceDrop = irandom(10);
+	var eliteChanceDrop = irandom(100);
 
 	if (eliteChanceDrop <= 5) {
 	    exeBringer_eliteType = "normalElite";

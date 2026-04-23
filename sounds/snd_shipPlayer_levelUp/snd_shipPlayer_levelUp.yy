@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_shipPlayer_levelUp",
+  "audioGroupId":{
+    "name":"audiogroup_sfx",
+    "path":"audiogroups/audiogroup_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.98099774,
+  "exportDir":"",
+  "name":"snd_shipPlayer_levelUp",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Sonidos/Misc/Player.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_shipPlayer_levelUp.wav",
+  "volume":0.7,
+}

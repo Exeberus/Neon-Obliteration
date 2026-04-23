@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"snd_bubblePersecutor_shoot",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"audiogroup_sfx",
+    "path":"audiogroups/audiogroup_sfx",
   },
   "bitDepth":1,
   "channelFormat":0,
@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_bubblePersecutor_shoot",
   "parent":{
-    "name":"BubblePersecutor",
-    "path":"folders/Sonidos/Player/Weapons/Cannons/BubblePersecutor.yy",
+    "name":"Bubble Persecutor",
+    "path":"folders/Sonidos/Player/Weapons/Cannons/Bubble Persecutor.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

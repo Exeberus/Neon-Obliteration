@@ -14,12 +14,14 @@ function exe_bringer_singleTurret_behaviour() {
 	targetClosestDist = 0;
 	
 	with (obj_player) {
-		var distance = point_distance(other.x, other.y, x, y);
+		if (is_playerAlive) {
+			var distance = point_distance(other.x, other.y, x, y);
 		
-		if (distance < other.shipCannonRange) {
-		    other.targetClosestDist = distance;
-		    other.targetId = id;
-	    }
+			if (distance < other.shipCannonRange) {
+			    other.targetClosestDist = distance;
+			    other.targetId = id;
+		    }
+		}
 	}
 	if (targetId != noone && targetClosestDist < shipCannonRange) {
 		var pointDirection = 0;
@@ -66,12 +68,14 @@ function exe_bringer_sniperTurret_behaviour() {
 	targetClosestDist = 0;
 	
 	with (obj_player) {
-		var distance = point_distance(other.x, other.y, x, y);
+		if (is_playerAlive) {
+			var distance = point_distance(other.x, other.y, x, y);
 		
-		if (distance < other.shipCannonRange) {
-		    other.targetClosestDist = distance;
-		    other.targetId = id;
-	    }
+			if (distance < other.shipCannonRange) {
+			    other.targetClosestDist = distance;
+			    other.targetId = id;
+		    }
+		}
 	}
 	if (targetId != noone && targetClosestDist < shipCannonRange) {
 		var pointDirection = 0;
@@ -118,12 +122,14 @@ function exe_bringer_tripleTurret_behaviour() {
 	targetClosestDist = 0;
 	
 	with (obj_player) {
-		var distance = point_distance(other.x, other.y, x, y);
+		if (is_playerAlive) {
+			var distance = point_distance(other.x, other.y, x, y);
 		
-		if (distance < other.shipCannonRange) {
-		    other.targetClosestDist = distance;
-		    other.targetId = id;
-	    }
+			if (distance < other.shipCannonRange) {
+			    other.targetClosestDist = distance;
+			    other.targetId = id;
+		    }
+		}
 	}
 	if (targetId != noone && targetClosestDist < shipCannonRange) {
 		var pointDirection = 0;

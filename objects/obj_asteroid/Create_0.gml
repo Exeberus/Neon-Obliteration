@@ -4,6 +4,7 @@ is_enemy = true;
 shipName = "Asteroid";
 asteroidSize = "";
 enemyCreditDrop = 0;
+enemyExperienceDrop = 0;
 enemyDropChance = global.dropChanceSelected;
 enemyDropCant = 0;
 

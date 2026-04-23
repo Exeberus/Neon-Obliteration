@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_triganogthMissile_shoot",
+  "audioGroupId":{
+    "name":"audiogroup_sfx",
+    "path":"audiogroups/audiogroup_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.28705215,
+  "exportDir":"",
+  "name":"snd_triganogthMissile_shoot",
+  "parent":{
+    "name":"Triganogth Missile",
+    "path":"folders/Sonidos/Player/Weapons/Cannons/Triganogth Missile.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_triganogthMissile_shoot.wav",
+  "volume":0.7,
+}

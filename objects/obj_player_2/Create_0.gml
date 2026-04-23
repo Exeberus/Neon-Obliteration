@@ -2,8 +2,9 @@ var controller = instance_find(obj_player_controller, 0);
 
 if (controller != noone) {
 	shipName = global.shipPlayer2Name;
-	shipLevel = global.shipPlayerLevel;
+	shipPlayer_levelup_variables();
 	Player = 2;
+	gamepadID = 0;
 	deathAlpha = 0;
 	resurrectPlayer = false;
 	is_playerAlive = true;
@@ -55,17 +56,20 @@ if (controller != noone) {
 	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;
 	
 	// Seleccion de armas
-	shipWeaponSlot_1 = global.shipPlayerWeaponSlot_1
-	shipWeaponSlot_1_sprite = global.shipPlayerWeaponSlot_1_icon
+	shipWeaponSlot_1 = global.shipPlayerWeaponSlot_1_p2;
+	shipWeaponSlot_1_sprite = global.shipPlayerWeaponSlot_1_icon_p2;
 	
-	shipWeaponSlot_2 = global.shipPlayerWeaponSlot_2
-	shipWeaponSlot_2_sprite = global.shipPlayerWeaponSlot_2_icon
+	shipWeaponSlot_2 = global.shipPlayerWeaponSlot_2_p2;
+	shipWeaponSlot_2_sprite = global.shipPlayerWeaponSlot_2_icon_p2;
 	
-	shipWeaponSlot_3 = global.shipPlayerWeaponSlot_3
-	shipWeaponSlot_3_sprite = global.shipPlayerWeaponSlot_3_icon
+	shipWeaponSlot_3 = global.shipPlayerWeaponSlot_3_p2;
+	shipWeaponSlot_3_sprite = global.shipPlayerWeaponSlot_3_icon_p2;
 	
 	shipActualSlot = 1;
 	shipActualWeapon = shipWeaponSlot_1;
+	
+	shipWeaponSlot_1();
+	resetWeapon();
 }
 sprite_index = global.shipPlayer2Model;
 image_blend = global.shipPlayer2Color;
@@ -80,16 +84,19 @@ function playerVariableLimit() {
 	shipCritChance = clamp(shipCritChance, 0, 100);
 }
 
-// Barras de Vida y Cooldown
-healthBarAlpha = 0
-cooldownBarAlpha = 0
-barPositionY = (y + 0);
+// Barras de Vida, Cooldown y Experiencia.
+healthBarAlpha = 0;
+cooldownBarAlpha = 0;
+experienceBarAlpha = 1;
+cooldownBarPositionY = (y + 0);
+experienceBarPositionY = (y + 0);
 
 // Texto de Cambio de Arma
 weaponTextAlpha = 0;
 
 // Linea de Punteria
 aimLineAlpha = 0;
+toggleAimLine = false;
 
 // Toggle para mostrar data
 showShipData = false;

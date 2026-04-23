@@ -46,4 +46,6 @@ function resetWeapon() {
 	
 	shipWeaponSound = global.shipPlayerWeaponSound;
 	shipWeaponImpactSound = global.shipPlayerWeaponImpactSound;
+	
+	shipActualWeapon();
 }

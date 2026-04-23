@@ -5,12 +5,12 @@ global.shipPlayerLives = 3;
 
 // Movimiento.
 global.shipPlayerSpeed = 0;
-global.shipPlayerAcceleration = 0.06
+global.shipPlayerAcceleration = 0.03
 global.shipPlayerMinSpeed = 0;
-global.shipPlayerMaxSpeed = 3;
+global.shipPlayerMaxSpeed = 2.20;
 
-global.shipPlayerRotationSpeed = 1.5;
-global.shipPlayerMinRotationSpeed = 2;
+global.shipPlayerRotationSpeed = 1.0;
+global.shipPlayerMinRotationSpeed = 0.5;
 global.shipPlayerMaxRotationSpeed = 12;
 
 global.shipPlayerDirection = 90;
@@ -26,6 +26,7 @@ global.shipPlayerRegenerationTimeActual = 0;
 
 // // Ataque de la nave.
 global.shipPlayerAttack = 1.5;
+shipAttack = global.shipPlayerAttack;
 global.shipPlayerHitChance = 1;
 global.shipPlayerCritAttack = 1.3;
 global.shipPlayerCritChance = 5;
@@ -54,14 +55,14 @@ global.shipPlayerWeapon_is_AoE = noone;
 global.shipPlayerWeaponAoERange = 0;
 
 // Seleccion de armas
-global.shipPlayerWeaponSlot_1 = arrowBoltCannon_variables;
-global.shipPlayerWeaponSlot_1_icon = spr_arrowBolt_cannon_icon;
+global.shipPlayerWeaponSlot_1_p1 = blasterCannon_variables;
+global.shipPlayerWeaponSlot_1_icon_p1 = spr_blaster_cannon_icon;
 
-global.shipPlayerWeaponSlot_2 = bubblePersecutorCannon_variables;
-global.shipPlayerWeaponSlot_2_icon = spr_bubblePersecutor_cannon_icon;
+global.shipPlayerWeaponSlot_2_p1 = sniperithCannon_variables;
+global.shipPlayerWeaponSlot_2_icon_p1 = spr_sniperith_cannon_icon;
 
-global.shipPlayerWeaponSlot_3 = argorusCannon_variables;
-global.shipPlayerWeaponSlot_3_icon = spr_argorus_cannon_icon;
+global.shipPlayerWeaponSlot_3_p1 = triganogthCannon_variables;
+global.shipPlayerWeaponSlot_3_icon_p1 = spr_triganogthMissile_cannon_icon;
 
 // Limitadores a estas variables.
 function playerVariableLimit() {
@@ -73,5 +74,3 @@ function playerVariableLimit() {
 	global.shipPlayerCritAttack = clamp(global.shipPlayerCritAttack, 1.0, infinity);
 	global.shipPlayerCritChance = clamp(global.shipPlayerCritChance, 0, 100);
 }
-	
-global.shipPlayerWeaponSlot_1();

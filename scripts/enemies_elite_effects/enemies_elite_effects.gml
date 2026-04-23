@@ -21,7 +21,8 @@ function activateEliteEffects() {
 				is_uniqueEffect = true;
 			break;
 		}
-		enemyCreditDrop *= mult
+		enemyCreditDrop *= mult;
+		enemyExperienceDrop *= mult;
 		enemyDropChance *= mult;
 		enemyDropCant += mult;
 		shipMaxHealth *= mult;
@@ -51,7 +52,7 @@ function applyBasicEffects1() {
 		case "Sonic Bullet ": shipWeaponBulletSpeed *= 2.00; break;
 		case "Dodge Expert ": shipDodge += 10; break;
 		case "Giant ": shipMaxHealth *= 1.4; shipHealth = shipMaxHealth; image_xscale += 0.1; image_yscale += 0.1; break;
-		case "Healing Wave ": is_healingWave = true; active_healingWaveMax = (5 * 60); active_healingWaveActual = 0; healingWaveRadio = 125; break;
+		case "Healing Wave ": is_healingWave = true; active_healingWaveMax = (5 * 60); active_healingWaveActual = 0; healingWaveRadio = 200; break;
 		
 		case "Assassin ": shipDodge += 10; shipSpeed += 1; shipAttack *= 1.50; shipWeaponBulletCant += 2; break
 		case "Colossus ": shipMaxHealth *= 2.0; shipHealth = shipMaxHealth; shipDefense *= 1.30; shipSpeed -= 1; shipAttack *= 1.20; shipWeaponBulletSpeed *= 0.70; image_xscale += 0.4; image_yscale += 0.4; break;
@@ -66,7 +67,7 @@ function applyBasicEffects2() {
 		case "Sonic Bullet ": shipWeaponBulletSpeed *= 2.00; break;
 		case "Dodge Expert ": shipDodge += 10; break;
 		case "Giant ": shipMaxHealth *= 1.4; shipHealth = shipMaxHealth; image_xscale += 0.1; image_yscale += 0.1; break;
-		case "Healing Wave ": is_healingWave = true; active_healingWaveMax = (5 * 60); active_healingWaveActual = 0; healingWaveRadio = 125; break;
+		case "Healing Wave ": is_healingWave = true; active_healingWaveMax = (5 * 60); active_healingWaveActual = 0; healingWaveRadio = 200; break;
 	}
 }
 function applyBasicEffects3() {
@@ -78,7 +79,7 @@ function applyBasicEffects3() {
 		case "Sonic Bullet ": shipWeaponBulletSpeed *= 2.00; break;
 		case "Dodge Expert ": shipDodge += 10; break;
 		case "Giant ": shipHealth *= 1.4; image_xscale += 0.1; image_yscale += 0.1; break;
-		case "Healing Wave ": is_healingWave = true; active_healingWaveMax = (5 * 60); active_healingWaveActual = 0; healingWaveRadio = 125; break;
+		case "Healing Wave ": is_healingWave = true; active_healingWaveMax = (5 * 60); active_healingWaveActual = 0; healingWaveRadio = 200; break;
 	}
 }
 

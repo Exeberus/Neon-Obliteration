@@ -6,6 +6,7 @@ shipName = "Arrow";
 is_enemy = true;
 is_lightEnemy = true;
 enemyCreditDrop = 5 + (3 * shipLevel);
+enemyExperienceDrop = 0.3;
 enemyDropChance = global.dropChanceSelected;
 enemyDropCant = 1;
 
